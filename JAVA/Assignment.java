@@ -51,6 +51,8 @@ public class Assignment {
 
         float cel = (fahren-32)*5/9;
         System.out.printf("ฟาเรนไฮต์ = %.2f เซลเซียส = %.2f", fahren, cel);
+        // ถ้ามี float ให้printf 
+        // ที่เหลือใช้println
 
     }
 }
