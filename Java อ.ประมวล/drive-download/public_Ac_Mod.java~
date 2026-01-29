@@ -1,0 +1,8 @@
+public class public_Ac_Mod{
+  public static void main(String[] args){
+    publuc_emp emp = new public_emp();
+    System.out.println("Current Salary is = "+ emp.salry);
+    emp = 24000.0f;
+    System.out.println("New Salary is = " + emp.salary);
+  }
+}

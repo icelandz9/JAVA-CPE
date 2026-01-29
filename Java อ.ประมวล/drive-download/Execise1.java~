@@ -1,0 +1,4 @@
+//import javax.swing.JOptionPane;
+import java.util.Scanner;
+public class Execise1{
+  public static void main(String[] args){

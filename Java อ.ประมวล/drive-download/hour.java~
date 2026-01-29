@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class hour {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int num, sec, min, hr;
+      
+      System.out.print("Input Seconds: ");
+      num = sc.nextInt();
+      
+      hr = num / 60;
+      min = hr / 60;
+      sec = min /60;
+      
+      System.out.println(hr + min + sec);
+    }
+}
+
+      

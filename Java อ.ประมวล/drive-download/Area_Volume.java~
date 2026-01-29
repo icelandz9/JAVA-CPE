@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Area_Volume {
+    public static void main(String[] args) {
+      
+      double area, radius, volume, length;
+      
+      Scanner sc = new Scanner(System.in);
+      
+      String data = JOptionPane.showInputDialog(null, "Input Radiuse: ");
+      String lang = JOptionPane.showInputDialog(null, "Input Radiuse: ");
+      
+      redius = (Double)(data);
+      length = (Double)(lang);
+      
+      area = (radius * radius) * Math.PI;
+      volume = area * length;
+      
+      JOptionPane.showMessageDialog(null, "The area is " + area);
+      JOptionPane.showMessageDialog(null, "The Volume of the cylinder is " + volume);
+
+        sc.close();
+    }
+}
