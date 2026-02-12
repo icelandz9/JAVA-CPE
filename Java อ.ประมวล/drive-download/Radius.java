@@ -10,17 +10,17 @@ public class Radius {
       
               
       
-//      System.out.print("Input radius: ");
-//      radius = sc.nextDouble();
-//      System.out.print("Input Length: ");
-//      length = sc.nextDouble();
+     System.out.print("Input radius: ");
+     radius = sc.nextDouble();
+     System.out.print("Input Length: ");
+     length = sc.nextDouble();
       
-      area = (data * data) * Math.PI;
+      area = (radius * radius) * Math.PI;
       volume = area * length;
       
 
       
-//      System.out.printf("Area: %.2f%nVloume: %.2f%n", area, volume);
+     System.out.printf("Area: %.2f%nVloume: %.2f%n", area, volume);
         
         sc.close();
     }

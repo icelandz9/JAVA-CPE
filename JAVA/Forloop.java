@@ -6,8 +6,8 @@ public class Forloop {
             System.err.println("Forloop I = " + i);
             if (i == 5) {
                 while (true) {
-                    if (j == 5) {
-                        System.out.println("Nested Loop = "+ j);
+                    if (count == 5) {
+                        System.out.println("Nested Loop = "+ count);
                         break;
                     }
                     count++;

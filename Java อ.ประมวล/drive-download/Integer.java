@@ -15,5 +15,7 @@ public class Integer{
     result = num1 * num2 * num3;
     
     System.out.println("Integer between 000 and 999: " + result);
+
+    sc.close();
   }
 }

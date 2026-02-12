@@ -50,5 +50,7 @@ class Sw_case{
             break;
         } 
         System.out.println(name);
+
+        kb.close();
     }
 }

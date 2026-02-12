@@ -1,7 +1,7 @@
 class Variable {
     public static void main(String[] args) {
         // Parameter
-        int number1;
+        // int number1;
         float num2;
         String ch;
 

@@ -11,7 +11,7 @@ public class Popup {
 
         String num_srt = JOptionPane.showInputDialog(null, "Input UR Number");
         num1 = Integer.parseInt(num_srt);
-        // ถ้าใใส่ตัวอักษรจะ error แล้วหายไปเลย
+        // ถ้าใส่ตัวอักษรจะ error แล้วหายไปเลย
 
         JOptionPane.showMessageDialog(null,"Your number is " +  num1);
     }
