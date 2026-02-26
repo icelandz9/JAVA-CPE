@@ -5,7 +5,7 @@ public class Loop1 {
         Scanner sc = new Scanner(System.in);
 
         int num, sum = 0;
-
+        
         System.out.print("Enter your number : ");
         num = sc.nextInt();
 
