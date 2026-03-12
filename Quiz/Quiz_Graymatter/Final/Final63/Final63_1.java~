@@ -1,0 +1,51 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Final63 extends JFrame {
+    public SighinFrame() {
+        super("CPE 222 : Frame Layout");
+        setLayout(new BorderLayout());
+
+        // ===== TOP =====
+        JLabel titleLabel = new JLabel("*** กรุณาใส่ข้อมูลเข้าสู่ระบบ ***", JLabel.CENTER);
+        titleLabel.setForeground(Color.RED);
+        add(titleLabel, BorderLayout.NORTH);
+
+        // ===== LEFT =====
+        JPanel leftPanel = new JPanel(new GridLayout(4, 4, 5, 5)); // spacing 5px
+        String[] buttons = {
+            "1", "2", "3", "+",
+            "4", "5", "6", "-",
+            "7", "8", "9", "*",
+            "0", ".", "=", "/"
+        };
+        for (String text : buttons) {
+            leftPanel.add(new JButton(text));
+        }
+        add(leftPanel, BorderLayout.WEST);
+
+        // ===== CENTER =====
+        JPanel centerPanel = new JPanel(new GridLayout(2, 2, 5, 5));
+        centerPanel.add(new JLabel("Username"));
+        centerPanel.add(new JTextField(10));
+        centerPanel.add(new JLabel("Password"));
+        centerPanel.add(new JPasswordField(10));
+
+        add(centerPanel, BorderLayout.CENTER);
+
+        // ===== SOUTH =====
+        JPanel buttonPanel = new JPanel(new FlowLayout());
+        buttonPanel.add(new JButton("Log in"));
+        buttonPanel.add(new JButton("Cancel"));
+        add(buttonPanel, BorderLayout.SOUTH);
+
+        // ===== FRAME SETTINGS =====
+        setSize(500, 250);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new SighinFrame();
+    }
+}

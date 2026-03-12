@@ -1,0 +1,102 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Final63_2 extends JFrame {
+    private CirclePanel canvas = new CirclePanel();
+
+    public Final63_2() {
+        setTitle("ControlCircleSquare");
+        setLayout(new BorderLayout());
+
+        // แถบปุ่มล่าง
+        JPanel buttonPanel = new JPanel(new GridLayout(2, 4));
+
+        JButton btnRight = new JButton("Right");
+        JButton btnLeft = new JButton("Left");
+        JButton btnDown = new JButton("Down");
+        JButton btnUp = new JButton("Up");
+        JButton btnShrink = new JButton("Shrink");
+        JButton btnEnlarge = new JButton("Enlarge");
+
+        buttonPanel.add(btnRight);
+        buttonPanel.add(btnLeft);
+        buttonPanel.add(btnDown);
+        buttonPanel.add(btnUp);
+        buttonPanel.add(btnShrink);
+        buttonPanel.add(new JLabel()); // ช่องว่าง
+        buttonPanel.add(btnEnlarge);
+
+        // เชื่อมปุ่มกับฟังก์ชัน
+        btnRight.addActionListener(e -> canvas.move(10, 0));
+        btnLeft.addActionListener(e -> canvas.move(-10, 0));
+        btnDown.addActionListener(e -> canvas.move(0, 10));
+        btnUp.addActionListener(e -> canvas.move(0, -10));
+        btnShrink.addActionListener(e -> canvas.resize(-5));
+        btnEnlarge.addActionListener(e -> canvas.resize(5));
+
+        add(canvas, BorderLayout.CENTER);
+        add(buttonPanel, BorderLayout.SOUTH);
+
+        // เพิ่ม key listener
+        canvas.setFocusable(true);
+        canvas.requestFocusInWindow();
+        canvas.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                switch (e.getKeyChar()) {
+                    case 'j': canvas.move(-10, 0); break;
+                    case 'l': canvas.move(10, 0); break;
+                    case 'i': canvas.move(0, -10); break;
+                    case 'k': canvas.move(0, 10); break;
+                    case '-': canvas.resize(-5); break;
+                    case '+': canvas.resize(5); break;
+                }
+                canvas.repaint();
+            }
+        });
+    }
+
+    // วาดวงกลม
+    class CirclePanel extends JPanel {
+        private int x = 150;
+        private int y = 150;
+        private int radius = 50;
+
+        public void move(int dx, int dy) {
+            x += dx;
+            y += dy;
+            repaint();
+        }
+
+        public void resize(int dr) {
+            radius += dr;
+            if (radius < 10) radius = 10; // ป้องกันวงกลมหาย
+            repaint();
+        }
+
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+
+            // เส้นแกน
+            g.setColor(Color.RED);
+            g.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
+            g.drawLine(0, getHeight() / 2, getWidth(), getHeight() / 2);
+
+            // วงกลม 1
+            g.setColor(Color.GREEN);
+            g.fillOval(x, y, radius * 2, radius * 2);
+
+            // วงกลม 2 (ขาว)
+            g.setColor(Color.BLACK);
+            g.drawOval(x - 100, y + 100, radius * 2, radius * 2);
+        }
+    }
+
+    public static void main(String[] args) {
+        Final63_2 frame = new Final63_2();
+        frame.setSize(500, 500);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
+}

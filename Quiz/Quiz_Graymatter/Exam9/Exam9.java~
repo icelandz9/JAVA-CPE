@@ -1,0 +1,13 @@
+public class Exam9 {
+    public static void main(String[] args) {
+        Cylinder C1 = new Cylinder(10.2,14.3);
+        C1.printCylinder();
+
+        Cylinder C2 = new Cylinder();
+        C2.printCylinder();
+        
+        Cylinder C3 = new Cylinder(12.6);
+        C3.printCylinder();
+        
+    }
+}

@@ -1,0 +1,85 @@
+//Quiz9
+package Quiz.Quiz_Graymatter.Exam9;
+
+interface Swimmable {
+    public String howToSwim();
+}
+
+abstract class Animal {
+    public abstract String sound();
+
+    public String howToSleep() {
+        return "";
+    }
+
+}
+
+interface Edible {
+    public String howToEat();
+}
+
+class Penguin extends Animal implements Swimmable {
+    public String howToSleep() {
+        return "Penguin: Can sleep while floating in the water and standing up on the rocks";
+    }
+
+    public String howToSwim() {
+        return "Penguin: Swim by using them wings taht paddle-like flippers";
+    }
+
+    public String sound() {
+        return "Penguin: Honk-Honk";
+    }
+}
+
+class Frog extends Animal implements Swimmable {
+    public String howToSwim() {
+        return "Frog: Swim with their powerful hind legs, and flattened, Streamlined body";
+    }
+
+    public String howToSleep() {
+        return "Frog : May rest more throughout the day when the sun is hot";
+    }
+
+    public String sound() {
+        return "Frog: Ribbit-Ribbit";
+    }
+}
+
+class Pig extends Animal implements Edible {
+    public String howToEat() {
+        return "Pig: Grill or Fry it";
+    }
+
+    public String howToSleep() {
+        return "Pig: Like to sleep snuggled up together in their nest";
+    }
+
+    public String sound() {
+        return "Pig: Oink-Oink";
+    }
+}
+
+class Fruit implements Edible {
+    public String howToEat() {
+        return "Fruit is healthy food";
+    }
+}
+
+class Coconut extends Fruit {
+    public String howToEat() {
+        return "Coconut: Refreshing with ice coconut water";
+    }
+}
+
+class Orange extends Fruit {
+    public String howToEat() {
+        return "Orange: Make Orange Juice";
+    }
+}
+
+class Banana extends Fruit {
+    public String howToEat() {
+        return "Banana: Make Healthy Banana Smoothie";
+    }
+}

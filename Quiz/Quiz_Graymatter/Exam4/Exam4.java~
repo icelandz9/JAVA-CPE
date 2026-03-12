@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class Exam4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // รับค่าราคาบ้าน
+        System.out.print("Enter House price (e.g. 4500000): ");
+        double housePrice = scanner.nextDouble();
+
+        // รับค่าจำนวนปีที่ผ่อน
+        System.out.print("Enter number of years: ");
+        int years = scanner.nextInt();
+
+        // ประกาศตัวแปรอัตราดอกเบี้ย
+        double interestRate;
+
+        // ใช้ switch-case กำหนดอัตราดอกเบี้ยตามจำนวนปี
+        switch (years) {
+            case 10:
+                interestRate = 3.5;
+                break;
+            case 15:
+                interestRate = 3.9;
+                break;
+            case 20:
+                interestRate = 4.1;
+                break;
+            case 25:
+                interestRate = 4.3;
+                break;
+            case 30:
+                interestRate = 4.5;
+                break;
+            default:
+                System.out.println("Invalid number of years! Please enter 10, 15, 20, 25, or 30.");
+                scanner.close();
+                return;
+        }
+
+        // คำนวณดอกเบี้ยรวม: ดอกเบี้ย = ราคาบ้าน * (อัตราดอกเบี้ย / 100) * จำนวนปี
+        double totalInterest = housePrice * (interestRate / 100) * years;
+
+        // แสดงผลลัพธ์
+        System.out.println("Total interest over " + years + " years = " + totalInterest + " Baht");
+
+        scanner.close();
+    }
+}

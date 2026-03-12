@@ -1,0 +1,49 @@
+public class Exam9Cylinder {
+    public static final double PI = 3.14;
+    private double radius; 
+    private double height; 
+
+    public Exam9Cylinder(double r , double h) {
+        this.radius = r;
+        this.height = h;
+    }
+    
+    public Exam9Cylinder() {
+        this.radius = 4.0;
+        this.height = 7.0;
+    }
+    
+    public Exam9Cylinder(double r) {
+      this.radius = r;
+        this.height = 7.0;
+    }
+    
+    public double getCylinderArea() {
+        return (2.0 * PI * radius) * (radius + height);
+    }
+    
+    public double getRadius() {
+        return radius;
+    }
+
+    public double getCylinderVolume() {
+        return PI * radius * radius * height;
+    }
+    
+    public double getHeight() {
+        return height;
+    }
+
+    public double getSurfaceAreaAllSides() {
+        return 2.0 * PI * radius * height;
+    }
+
+    public void printCylinder() {
+        System.out.println("");
+        System.out.println("All parameters of this Cylinder");
+        System.out.println("Radius = " + getRadius() + " cm, Height = " + getHeight());
+        System.out.println("Circle Area = " + getCylinderArea() );
+        System.out.println("Surface Area of All Sides = " + getSurfaceAreaAllSides() +"cm2");
+        System.out.println("Volume of Cylinder  = " + getCylinderVolume() +"cm3" );
+    }
+}

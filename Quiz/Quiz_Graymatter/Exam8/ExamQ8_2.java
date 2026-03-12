@@ -1,0 +1,60 @@
+package Quiz.Quiz_Graymatter.Exam8;
+
+import java.io.*;
+import java.util.Scanner;
+
+public class ExamQ8_2 {
+  public static void main(String[] args) {
+    String fname = "C:\\Users\\mxcnt\\OneDrive\\document\\code\\Java_Encyclopidea\\Quiz\\Quiz_Graymatter\\66CPE121Quiz08.txt";
+    FileWriter f_write = null;
+    BufferedWriter b_write = null;
+    try {
+      f_write = new FileWriter(fname);
+      b_write = new BufferedWriter(f_write);
+      String c;
+      System.out.println("Read from KB");
+      System.out.println("===========================");
+      do {
+        System.out.print("Enter Data : ");
+        c = new Scanner(System.in).nextLine();
+        if (!(c.equals("$")))
+          b_write.write(c + "\n");
+      } while (!(c.equals("$")));
+    } catch (IOException e) {
+      System.out.println(e);
+    } finally {
+      try {
+        if (b_write != null)
+          b_write.close();
+        System.out.println("Data are saved to File : \n" + fname);
+        System.out.println("===========================");
+      } catch (IOException e) {
+        System.out.println(e);
+      }
+    }
+    FileReader f_read = null;
+    BufferedReader b_read = null;
+    try {
+      f_read = new FileReader(fname);
+      b_read = new BufferedReader(f_read);
+      System.out.println("Read Data from File : \n" + fname);
+      System.out.println("===========================");
+      String c;
+      while ((c = b_read.readLine()) != null) {
+        System.out.print(c);
+        System.out.print("\t");
+      }
+      System.out.println();
+    } catch (IOException e) {
+      System.out.println(e);
+    } finally {
+      try {
+        if (b_read != null)
+          b_read.close();
+        System.out.println("===========================");
+      } catch (IOException e) {
+        System.out.println(e);
+      }
+    }
+  }
+}

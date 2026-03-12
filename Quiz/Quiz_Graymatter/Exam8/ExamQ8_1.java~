@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class ExamQ8_1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        try {
+            System.out.println("Program for computing the equation of a straight-line results.");
+            
+            // รับค่า m และ c
+            System.out.print("Enter m value: ");
+            double m = scanner.nextDouble();
+            
+            System.out.print("Enter c value: ");
+            double c = scanner.nextDouble();
+
+            // รับจำนวนค่าของ Y
+            System.out.print("Enter the total numbers of Y: ");
+            int numY = scanner.nextInt();
+
+            // ตรวจสอบค่าจำนวนที่รับว่าต้องเป็นบวก
+            if (numY <= 0) {
+                throw new IllegalArgumentException("Total numbers of Y must be greater than 0.");
+            }
+
+            // คำนวณค่า X ตามสมการ y = mx + c
+            double[] xValues = new double[numY];
+
+            for (int i = 0; i < numY; i++) {
+                xValues[i] = (i + 1 - c) / m;  // คำนวณค่า X
+            }
+
+            // แสดงผลลัพธ์
+            System.out.println("The Results of X values:");
+            for (double x : xValues) {
+                System.out.print(x + " ");
+            }
+            System.out.println();
+
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero is not allowed.");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Error: " + e);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("An unexpected error occurred: " + e);
+        } finally {
+            scanner.close();
+        }
+    }
+}

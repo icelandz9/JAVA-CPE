@@ -1,0 +1,36 @@
+public class circle extends CloseFigure {
+    private double radius;
+
+    public circle(double radius, String color) {
+        super(color); // เรียก constructor จากคลาสแม่
+        this.radius = radius;
+    }
+
+    public circle(double radius) {
+        this.radius = radius;
+    }
+
+    public circle() {
+        this.radius = 1;
+    }
+
+    public double getArea() {
+        return 3.14 * radius * radius;
+    }
+
+    public double getPerimeter() {
+        return 2 * 3.14 * radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public double getDiameter() {
+        return 2 * radius;
+    }
+
+    public String toString() {
+        return "(radius,diameter,area,perimeter,color)=(" + getRadius() + "," + getDiameter() + "," + getArea() + "," + getPerimeter() + "," + getColor() + ")";
+    }
+}

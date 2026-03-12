@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+public class Exam5 {
+  public static void main(String[] args) {
+    int sum1 = 0 ;
+    int sumodd ;
+
+        for (int row = 1; row <= 5; row++) {
+          for (int col = 1; col <= 5; col++) {
+              int RandomNum1 = (int)(Math.random() * -1500) + 500 ;
+                System.out.printf("%10d ", RandomNum1);
+                if (RandomNum1 % 2 != 0 ) {
+                  sum1 += RandomNum1 ;
+                }
+            }
+
+            System.out.print("\n"); 
+        }
+        sumodd = sum1 ;
+        JOptionPane.showMessageDialog(null, String.format("The sum of all odd numbers in the 5*5 matrix is : %d\n", sumodd));
+  }
+}

@@ -1,0 +1,90 @@
+package Quiz.Quiz_Graymatter.Exam12;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Exam12 extends JFrame {
+    private JTextField tfNumber1 = new JTextField(5);
+    private JTextField tfNumber2 = new JTextField(5);
+    private JTextField tfResult = new JTextField(10);
+
+    private JButton btnAdd = new JButton("Add");
+    private JButton btnSubtract = new JButton("Subtract");
+    private JButton btnMultiply = new JButton("Multiply");
+    private JButton btnDivide = new JButton("Divide");
+
+    public Exam12() {
+        // Panel ����Ѻ��͡������
+        JPanel panelInput = new JPanel(new GridLayout(3, 2));
+        panelInput.add(new JLabel("Number 1"));
+        panelInput.add(tfNumber1);
+        panelInput.add(new JLabel("Number 2"));
+        panelInput.add(tfNumber2);
+        panelInput.add(new JLabel("Result"));
+        tfResult.setEditable(false);
+        panelInput.add(tfResult);
+
+        // Panel ����Ѻ����
+        JPanel panelButtons = new JPanel(new GridLayout(4, 1));
+        panelButtons.add(btnAdd);
+        panelButtons.add(btnSubtract);
+        panelButtons.add(btnMultiply);
+        panelButtons.add(btnDivide);
+
+        JPanel panelAll = new JPanel(new GridLayout(1, 2));
+        panelAll.add(panelInput);
+        panelAll.add(panelButtons);
+        add(panelAll);
+
+        // Action Listeners (��¹�������л������)
+        btnAdd.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                double num1 = Double.parseDouble(tfNumber1.getText());
+                double num2 = Double.parseDouble(tfNumber2.getText());
+                double result = num1 + num2;
+                tfResult.setText(String.valueOf(result));
+            }
+        });
+
+        btnSubtract.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                double num1 = Double.parseDouble(tfNumber1.getText());
+                double num2 = Double.parseDouble(tfNumber2.getText());
+                double result = num1 - num2;
+                tfResult.setText(String.valueOf(result));
+            }
+        });
+
+        btnMultiply.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                double num1 = Double.parseDouble(tfNumber1.getText());
+                double num2 = Double.parseDouble(tfNumber2.getText());
+                double result = num1 * num2;
+                tfResult.setText(String.valueOf(result));
+            }
+        });
+
+        btnDivide.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                double num1 = Double.parseDouble(tfNumber1.getText());
+                double num2 = Double.parseDouble(tfNumber2.getText());
+                if (num2 != 0) {
+                    double result = num1 / num2;
+                    tfResult.setText(String.valueOf(result));
+                } else {
+                    tfResult.setText("Error: Divide by 0");
+                }
+            }
+        });
+    }
+
+    public static void main(String[] args) {
+        Exam12 frame = new Exam12();
+        frame.setTitle("Calculator");
+        frame.setSize(500, 150);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}

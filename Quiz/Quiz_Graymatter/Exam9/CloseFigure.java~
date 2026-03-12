@@ -1,0 +1,27 @@
+public class CloseFigure {
+    private String color;
+
+    public CloseFigure(String color) {
+        this.color = color;
+    }
+
+    public CloseFigure() {
+        this.color = "white"; // ตั้งสีเริ่มต้นเป็นสีขาว
+    }
+
+    public double getArea() {
+        return 0.0; // ใส่ไว้เฉยๆ ยังไม่ได้ override
+    }
+
+    public double getPerimeter() {
+        return 0.0; // ใส่ไว้เฉยๆ ยังไม่ได้ override
+    }
+
+    public String getColor() {
+        return color; // อ่านค่าสี
+    }
+
+    public void setColor(String color) {
+        this.color = color; // กำหนดค่าสีใหม่
+    }
+}

@@ -1,0 +1,26 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Final {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("All Panels Together");
+
+        // สร้างแต่ละ panel จากคลาสที่คุณมี
+        HexagonPanel1 hexagonPanel = new HexagonPanel1();
+        StarPanel1 starPanel1 = new StarPanel1();
+        StarPanel2 starPanel2 = new StarPanel2();
+
+        // กำหนด layout
+        frame.setLayout(new BorderLayout());
+
+        // ใส่ panel ลงในตำแหน่งต่าง ๆ
+        frame.add(hexagonPanel, BorderLayout.WEST);
+        frame.add(starPanel1, BorderLayout.CENTER);
+        frame.add(starPanel2, BorderLayout.EAST);
+
+        // ขนาดของ frame และการตั้งค่าอื่น ๆ
+        frame.setSize(1200, 400); // ขยายความกว้างให้พอใส่ทั้ง 3 panel
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}

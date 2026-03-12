@@ -1,0 +1,80 @@
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.JLabel;
+ import javax.swing.JTextField;
+ import javax.swing.JFrame;
+ import java.awt.GridLayout;
+ public class Exam11 extends JFrame {
+ public Exam11() {
+   
+
+   
+   String num[] = {"1","2","3","4","5","6","7","8","9","*","0","#"};
+   JPanel cal = new JPanel(new GridLayout(4,3));
+ for(int i = 0 ; i < 12 ; i++) {
+   JButton bnum = new JButton(num[i]); 
+   cal.add(bnum);
+ }
+      JPanel btm = new JPanel(new BorderLayout());
+      btm.add(cal,BorderLayout.NORTH);
+      add(btm,BorderLayout.NORTH);
+      
+      JTextField N1 = new JTextField();
+      JTextField N2 = new JTextField();
+      JTextField RE = new JTextField();
+            JPanel calu = new JPanel(new GridLayout(3,2));
+            calu.add(new JLabel("Number1"));
+              calu.add(N1);
+            calu.add(new JLabel("Number2"));
+              calu.add(N2);
+            calu.add(new JLabel("Result"));
+            calu.add(RE);
+            
+            add(calu);
+
+
+     
+      
+      String numH[] = {"+","-","x","/",".","%"};
+   JPanel calH = new JPanel(new GridLayout(2,3));
+ for(int j = 0 ; j < 6 ; j++) {
+   JButton bnumH = new JButton(numH[j]); 
+   calH.add(bnumH);
+ }
+ 
+                 add(calH);
+       
+       JPanel select = new JPanel(new FlowLayout(FlowLayout.LEFT,10,20));
+       select.add(calu);
+       select.add(calH);
+       
+      JPanel btmsl = new JPanel(new BorderLayout());
+      btmsl.add(select,BorderLayout.CENTER);
+      add(btmsl,BorderLayout.CENTER);
+       
+      
+         JButton eq = new JButton("="); 
+         
+         JPanel btmeq = new JPanel(new BorderLayout());
+      btmeq.add(eq,BorderLayout.SOUTH);
+      add(btmeq,BorderLayout.SOUTH);
+      
+      
+      
+
+ 
+ }
+ 
+ /** Main method */
+ public static void main(String[] args) {
+ Exam11 frame = new Exam11();
+ frame.setTitle("Calculator");
+ frame.setSize(500, 500);
+ frame.setLocationRelativeTo(null); // Center the frame
+ 
+ 
+ frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ frame.setVisible(true);
+ 
+ }
+ }
