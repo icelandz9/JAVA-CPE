@@ -1,4 +1,4 @@
-package quiz7;
+// package quiz7;
 
 public class quiz71 {
     public static void sumEvenDigits(String str, String choice) {

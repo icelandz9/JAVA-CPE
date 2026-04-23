@@ -1,5 +1,3 @@
-package Quiz.Quiz_monkey.Quiz7.Q07_442_01;
-
 public class Spiderman extends SuperHero {
   private int age;
   private String power;

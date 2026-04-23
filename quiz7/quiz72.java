@@ -1,4 +1,4 @@
-package quiz7;
+// package quiz7;
 
 public class quiz72 {
     public static int countCPE(String str) {
