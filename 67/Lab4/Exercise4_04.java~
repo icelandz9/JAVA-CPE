@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Exercise4_04 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter a number : ");
+    int number = sn.nextInt();
+    while (true) {
+      int N = number/10
+    }
+    sn.close();
+  }
+  
+  public static int sumDigits(int n) {
+    double M=0;
+    M = ((4*(Math.pow(-1,i+1)))/((2*i)-1));
+    return M;
+  }
+} 

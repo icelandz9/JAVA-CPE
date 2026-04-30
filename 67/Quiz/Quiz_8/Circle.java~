@@ -1,0 +1,29 @@
+public class Circle extends ClosedFigure{
+  private double radius;
+  public Circle(double radius) {
+    this.radius = radius;
+  }
+  public Circle() {
+    super("(radius,diameter,area,perimeter, color)");
+  }
+  public Circle(double radius, String color) {
+    radius = Radius;
+    super(color);
+  }
+  public double getDiameter() {
+    return 
+  }
+  public double getParameter() {
+    return 
+  }
+  public double getArea() {
+    final double Math.PI = PI;
+    return 2*PI*radius;
+  }
+  public String toString() {
+    return "(radius,diameter,area,perimeter, color) = ("+getRadius()+","+getDiameter()+","+getArea()+","+getParameter()+","+getColor()+")";
+  }
+  public double getRadius() {
+    return radius;
+  }
+}

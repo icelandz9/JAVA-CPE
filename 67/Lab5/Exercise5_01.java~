@@ -1,0 +1,8 @@
+public class Exercise5_01 {
+  public static void main(String[] agrs) {
+    Circle Cc = new Circle(radius);
+    System.out.print("Circle's Area = "+Cc.Area());
+    System.out.print("Circle's Volume = "+Cc.getVolume());
+    System.out.print("Circle's Circumference = "+Cc.getCircumference());
+  }
+} 

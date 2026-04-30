@@ -1,0 +1,11 @@
+import javax.swing.JFrame;
+public class Lab10_2 {
+  public static void main(String[] args) {
+    HandleEvent2 frame = new HandleEvent2();
+    frame.setTitle("HandleEvent");
+    frame.setSize(465, 300 );
+    frame.setLocationRelativeTo(null);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
+  }
+}

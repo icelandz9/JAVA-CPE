@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Exercise4_02 {
+  fanal double Pi = Math.PI;
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    
+    sn.close();
+  }
+  
+  public static double area(int n, double side) {
+    
+  }
+} 

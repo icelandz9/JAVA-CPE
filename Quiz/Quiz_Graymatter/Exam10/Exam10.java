@@ -1,5 +1,3 @@
-package Quiz.Quiz_Graymatter.Exam10;
-
 import java.util.Scanner;
 
 public class Exam10 {

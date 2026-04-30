@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Exercise2_01 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter a,b,c,d,e,f : ");
+    double a = sn.nextDouble();
+    double b = sn.nextDouble();
+    double c = sn.nextDouble();
+    double d = sn.nextDouble();
+    double e = sn.nextDouble();
+    double f = sn.nextDouble();
+    if (((a*d)-(b*c)) != 0) {
+      double X = ((e*d)-(b*f))/((a*d)-(b*c));
+      double Y = ((a*f)-(e*c))/((a*d)-(b*c));
+      System.out.print("x is "+X+" y is "+Y);
+    } else {
+      System.out.print("The equation has no  solution");
+    }
+    sn.close();
+  }
+} 

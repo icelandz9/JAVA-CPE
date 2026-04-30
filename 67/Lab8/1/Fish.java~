@@ -1,0 +1,19 @@
+public class Fish{
+  private double weight;
+  
+  public Fish(double weight) {
+  
+  }
+  
+  public static void swim() {
+  
+  }
+  
+  public static double getWeight() {
+  
+  }
+  
+  public static String toString() {
+  
+  }
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Exercise2_03 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter an integer : ");
+    int integer = sn.nextInt();
+    
+    if (integer%3 or integer%11 == 0) {
+    
+    }
+    
+    
+    sn.close();
+  }
+} 

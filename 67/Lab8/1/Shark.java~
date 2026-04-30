@@ -1,0 +1,9 @@
+public class Shark extends Fish {
+  public static Shark(double weight) {
+  
+  }
+  
+  public static String toString() {
+  
+  }
+}

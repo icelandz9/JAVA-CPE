@@ -1,0 +1,11 @@
+import javax.swing.JFrame;
+public class Lab9_1_4 {
+  public static void main(String[] args) {
+    ShowFlowLayout1_4 frame = new ShowFlowLayout1_4();
+    frame.setTitle("ShowFlowLayout");
+    frame.setSize(642, 207 );
+    frame.setLocationRelativeTo(null);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
+  }
+}

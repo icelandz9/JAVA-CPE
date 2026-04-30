@@ -1,0 +1,13 @@
+public class MechanicalFish extends Fish {
+  public static MechanicalFish(double weight) {
+  
+  }
+  
+  public static void swim() {
+  
+  }
+  
+  public static String toString() {
+  
+  }
+}

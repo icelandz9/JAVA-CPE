@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Exercise2_07 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter a point with two coordinates :");
+    int X = sn.nextInt();
+    int Y = sn.nextInt();
+    Distance = Maih.sqrt((X-(X*X))+(Y-(Y*Y)))
+    
+    sn.close();
+  }
+} 

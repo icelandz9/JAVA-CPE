@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+public class Exercise_06 {
+  public static void main(String[] agrs) {
+    final double Pi = Math.PI;
+    String radius = JOptionPane.showInputDialog(null, "Enter the radius a cylinder :");
+    String length = JOptionPane.showInputDialog(null, "Enter the length a cylinder :");
+    Double Radius = Double.parseDouble(radius);
+    Double Length = Double.parseDouble(length);
+      
+    Double area = Radius*Radius*Pi;
+    Double volume = area*Length;
+      
+      
+    JOptionPane.showMessageDialog(null, "The area is " + area);
+    JOptionPane.showMessageDialog(null, "The volume is " + volume);
+
+  }
+} 

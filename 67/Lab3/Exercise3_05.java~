@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+public class Exercise3_05 {
+  public static void main(String[] agrs) {
+    
+    String students = JOptionPane.showInputDialog(null, "Enter the number of total students :");
+    int Students = Integer.parseInt(students);
+    double Sum;
+    for (int i=0;i<Students;i++) {
+      String scores = JOptionPane.showInputDialog(null, "Enter scores of students No "+i+"");
+      double Scores = Double.parseDouble(scores);
+      Sum += Scores;
+    }
+    Sum /= Students;
+  }
+} 

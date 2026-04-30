@@ -1,0 +1,43 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class Exercise3_04 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter a,x,n : ");
+    double a = sn.nextDouble();
+    double x = sn.nextDouble();
+    int n = sn.nextInt();
+    double Sum=0;
+    switch(n) {
+      case 0:
+        Sum = a;
+        JOptionPane.showMessageDialog(null, "ax^n where a = "+a+",x = "+x+",n = "+n+" is "+Sum);
+        break;
+      case 1: 
+        Sum = a*x;
+        JOptionPane.showMessageDialog(null, "ax^n where a = "+a+",x = "+x+",n = "+n+" is "+Sum);
+        break;
+      case 2:
+        Sum = a*(x*x);
+        JOptionPane.showMessageDialog(null, "ax^n where a = "+a+",x = "+x+",n = "+n+" is "+Sum);
+        break;
+      case 3:
+        Sum = a*(x*x*x);
+        JOptionPane.showMessageDialog(null, "ax^n where a = "+a+",x = "+x+",n = "+n+" is "+Sum);
+        break;
+      case 4:
+        Sum = a*(x*x*x*x);
+        JOptionPane.showMessageDialog(null, "ax^n where a = "+a+",x = "+x+",n = "+n+" is "+Sum);
+        break;
+      case 5:
+        Sum = a*(x*x*x*x*x);
+        JOptionPane.showMessageDialog(null, "ax^n where a = "+a+",x = "+x+",n = "+n+" is "+Sum);
+        break;
+      default:
+        System.out.print("Error");
+        break;
+    }
+    sn.close();
+  }
+} 

@@ -1,0 +1,7 @@
+public class WallFlower extends Flower {
+  public WallFlower() {
+  
+  }
+  
+  
+}

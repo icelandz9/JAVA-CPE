@@ -1,0 +1,27 @@
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+
+public class Final_1 extends JFrame {
+  private JTextField Search = new JTextField(5);
+  private JTextField Username = new JTextField(5);
+  private JTextField Password = new JTextField(5);
+  private JButton LogIn = new JButton("Log in");
+  private JButton Cancel = new JButton("Cancel");
+  public Final_1() {
+    JPanel Main = new JPanel(new BorderLayout());
+    Main.add(Search,BorderLayout.SOUTH);
+   
+    
+    add(Main);
+  }
+  
+  public static void main(String[] args) {
+    Final_1 frame = new Final_1();
+    frame.setTitle("CPE 121:Frame Layout");
+    frame.setSize(400, 200 );
+    frame.setLocationRelativeTo(null);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
+  }
+}

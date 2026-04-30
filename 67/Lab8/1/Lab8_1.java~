@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class Lab8_1 {
+  public static void main(String[] args) {
+    
+    sn.close();
+  }
+}

@@ -1,0 +1,22 @@
+public class Circle {
+  final double Pi = Math.PI;
+  private double r; 
+  
+  public Circle(double radius) {
+    this.radius = r;
+  }
+  
+  public double getArea() {
+  
+    return 0;
+  }
+  
+  public double getVolume() {
+  
+    return 0;
+  }
+  
+  public double getCircumference() {
+  
+    return 0;
+  }

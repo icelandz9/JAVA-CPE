@@ -1,0 +1,13 @@
+public class SaltedDriedFish extends Fish {
+  public static SaltedDriedFish(double weight) {
+  
+  }
+  
+  public static void swim() {
+  
+  }
+  
+  public static String toString() {
+  
+  }
+}

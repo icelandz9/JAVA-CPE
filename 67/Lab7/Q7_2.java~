@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Q7_2 {
+  public static void main(String[] args) {
+    Scanner sn = new Scanner(System.in);
+    String Message = sn.nextLine();
+    int count = countStr(Message);
+    System.out.print(count);
+    sn.close();
+  }
+  public static int countStr(String str,char ch) {
+    
+    return 0;
+  }  
+}

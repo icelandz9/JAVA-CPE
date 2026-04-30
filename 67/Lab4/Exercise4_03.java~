@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Exercise4_03 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    m(1);
+    sn.close();
+  }
+  
+  public static double m(int i) {
+    final double Pi = Math.PI;
+    double M
+    for (int k=0;k<10;k++) {
+      M = (4*(Math.pow(-1,i+1))/(2*i)-1);
+    }
+    return M;
+  }
+} 

@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Lab7_4 {
+  public static void main(String[] args) {
+    Scanner sn = new Scanner(System.in);
+    String Message = sn.nextLine();
+    Message(Message);
+    sn.close();
+  }
+  public static int sumNumbers(String str) {
+    
+    
+  }  
+}

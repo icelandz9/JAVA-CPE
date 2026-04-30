@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Lab7_2 {
+  public static void main(String[] args) {
+    Scanner sn = new Scanner(System.in);
+    do {
+    String Message = sn.nextLine();
+    } while (Message.length() >= 2)
+    Message(Message);
+    sn.close();
+  }
+  public static void Message(String Message) {
+    if 
+  }  
+}

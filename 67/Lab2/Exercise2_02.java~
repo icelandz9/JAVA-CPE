@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Exercise2_02 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter the first digits of an integer  : 013601267");
+    double integer = sn.nextDouble();
+    
+    d1 = integer /10;
+    
+    System.out.print(d1);
+    sn.close();
+  }
+} 

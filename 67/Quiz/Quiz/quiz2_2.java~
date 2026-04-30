@@ -1,0 +1,7 @@
+import java.util.Scanner;
+public class quiz2_2{
+  public static void main(String[] args){
+  Scanner sn = new Scanner(System.in);
+  int RANDOM = (int)(Math.random*90+45); 
+  }
+}

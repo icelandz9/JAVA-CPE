@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Lab7_3 {
+  public static void main(String[] args) {
+    Scanner sn = new Scanner(System.in);
+    String Message = sn.nextLine;
+    Message(Message);
+    sn.close();
+  }
+  public static void Message(String Message) {
+    if (Message.lenght <= 3) {
+      Message = Message.toUpperCase()
+    }
+  }  
+}

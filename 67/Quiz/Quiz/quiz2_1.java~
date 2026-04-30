@@ -1,0 +1,6 @@
+import javax.swing.JOptionPane;
+public class quiz2_1{
+  public static void main(String[] args){
+    String X = JOptionPane.showInputDialog(null,"Enter loan amount (Baht).e.g..100,000");
+  }
+}

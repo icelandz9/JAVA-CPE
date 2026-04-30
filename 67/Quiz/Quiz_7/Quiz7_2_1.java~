@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Quiz7_2 {
+  public static void main(String[] args) {
+    Scanner sn = new Scanner(System.in);
+    String Message = sn.nextLine();
+    
+    int TY = countTY(Message);
+    
+    System.out.println("Number of T & Y in this message : "+TY);
+    sn.close();
+  }
+  
+  public static int countTY(String str) {
+    str= str.toLowerCase();
+    int TY=0;
+    for (int i=0;i<str.length();i++) {
+      if (str.charAt(i) == 't') {
+        if (i<str.length()-1) {
+          if (str.charAt(i+1) == 'y'){
+            TY += 1;
+          }
+        }
+      } 
+    }
+    return TY;
+  }  
+}

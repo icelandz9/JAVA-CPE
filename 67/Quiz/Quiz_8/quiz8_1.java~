@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class quiz8_1 {
+  public static void main(String[] args) {
+    System.out.println("Program for computing the equation of a straight-line results.");
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter c value : ");
+    int c = sn.nextInt();
+    System.out.print("Enter m value : ");
+    int m = sn.nextInt();
+    int y>=20;
+  }
+}

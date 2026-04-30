@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class Exercise2_05 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    
+   
+    sn.close();
+  }
+} 

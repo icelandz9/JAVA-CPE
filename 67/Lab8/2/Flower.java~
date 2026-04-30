@@ -1,0 +1,11 @@
+public class Flower {
+  private String useInstruction;
+  
+  public Flower(String instruction) {
+  
+  }
+  
+  public String getInstruction() {
+    return "";
+  }
+}

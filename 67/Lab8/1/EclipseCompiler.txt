@@ -1,0 +1,14 @@
+30 ??.?. 2568 9:07:27 GMT: Log 'EclipseCompiler.txt' opened: 30 ??.?. 2568 9:07:27 GMT with name F:\!Cpe121\67\Lab8\1\EclipseCompiler.txt
+30 ??.?. 2568 9:08:09 GMT: diagnostics = javax.tools.DiagnosticCollector@4a10c458
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@2f037645
+fileObjects = [F:\!Cpe121\67\Lab8\1\Lab8_1.java, F:\!Cpe121\67\Lab8\1\MechanicalFish.java, F:\!Cpe121\67\Lab8\1\SaltedDriedFish.java, F:\!Cpe121\67\Lab8\1\Shark.java, F:\!Cpe121\67\Lab8\1\Fish.java]
+30 ??.?. 2568 9:08:09 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@54bbee64' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, F:\!Cpe121\67\Lab8\1;C:\Users\Asus\Desktop\drjava).exe]
+30 ??.?. 2568 9:08:09 GMT: Compiler call returned
+30 ??.?. 2568 9:11:42 GMT: diagnostics = javax.tools.DiagnosticCollector@721a057a
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@69028252
+fileObjects = [F:\!Cpe121\67\Lab8\1\Lab8_1.java, F:\!Cpe121\67\Lab8\1\MechanicalFish.java, F:\!Cpe121\67\Lab8\1\SaltedDriedFish.java, F:\!Cpe121\67\Lab8\1\Shark.java, F:\!Cpe121\67\Lab8\1\Fish.java, F:\!Cpe121\67\Lab8\2\Lab8_2.java, F:\!Cpe121\67\Lab8\1\Flower.java]
+30 ??.?. 2568 9:11:42 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@5957742d' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, F:\!Cpe121\67\Lab8\1;F:\!Cpe121\67\Lab8\2;C:\Users\Asus\Desktop\drjava).exe]
+30 ??.?. 2568 9:11:43 GMT: Compiler call returned
+30 ??.?. 2568 9:11:43 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@2db4c02e
+30 ??.?. 2568 9:11:43 GMT:  Kind = WARNING
+30 ??.?. 2568 9:11:43 GMT: Name = F:\!Cpe121\67\Lab8\1\Flower.java LineNo = 2 ColNo = 18 Msg = 'The value of the field Flower.useInstruction is not used'

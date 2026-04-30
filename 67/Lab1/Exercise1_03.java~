@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Exercise_03 {
+  public static void main(String[] agrs) {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter the number of seconds : 16520");
+    int number = sn.nextInt();
+    int H = number/3600;
+    int M = (number/60)%60;
+    int S = (number%60);
+    System.out.print(number+" seconds is "+H+" hours, "+M+" minutes, and "+S+" seconds");
+    sn.close();
+  }
+} 

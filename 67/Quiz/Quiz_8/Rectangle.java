@@ -1,0 +1,33 @@
+public class Rectangle extends ClosedFigure{
+  private double length;
+  private double width;
+  
+  public Rectangle(double width, double length, String color) {
+    super(color);
+    this.length = length;
+    this.width = width;
+  }
+  public Rectangle() {
+  }
+  public Rectangle(double width, double length) {
+    this.length = length;
+    this.width = width;
+  }
+  
+  
+  public double getParameter() {
+    return width+width+length+length;
+  }
+  public String toString() {
+    return "(width,length,area,perimeter,color) = "+getWidth()+","+getLength()+","+getArea()+","+getParameter()+","+getColor()+")" ;
+  }
+  public double getWidth() {
+    return width;
+  }
+  public double getLength() {
+    return length;
+  }
+  public double getArea() {
+    return width*length;
+  }
+}

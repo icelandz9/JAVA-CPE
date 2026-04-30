@@ -1,0 +1,18 @@
+mport java.util.Scanner;
+public class Q3_1{
+  public static void main(String args[]){
+    double T,Tt= 0.00;
+    System.out.print("Enter the number of n : ");
+    Scanner sn = new Scanner(System.in);
+    int n = sn.nextInt();
+    for(int i = 1 ; i < n ; i++){
+      if(i%3 == 0 || i%5 == 0){
+        T = ((Math.pow(-1,i+1))/((2*i)-1))+(2*i);
+        Tt += T ; 
+        if(i%30 == 0)
+          System.out.println("T = "+Tt);
+      }
+    }
+  }
+}
+}

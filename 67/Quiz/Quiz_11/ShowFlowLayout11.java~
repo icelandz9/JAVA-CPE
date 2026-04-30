@@ -1,0 +1,23 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class ShowFlowLayout11 extends JFrame {
+  private static final long serialVersionUID = 1L;
+  
+  public ShowFlowLayout1_2() {
+    
+    
+    addComponentListener(new ComponentAdapter() {
+      @Override
+      public void componentResized(ComponentEvent e) {
+        int width = getWidth();
+        int height = getHeight();
+        System.out.println("Current size: " + width + " x " + height);
+      }
+    });
+
+    setVisible(true);
+    
+  }
+}

@@ -1,0 +1,8 @@
+public class Banana extends Fruit {
+  public String howToEat() {
+    return "Banana: Make Healthy Banana Smoothie";
+  }
+}
+
+
+

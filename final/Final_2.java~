@@ -1,0 +1,25 @@
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.*;
+
+public class Final_2 extends JFrame {
+  private JTextField B = new JTextField(5);
+  private JTextField H = new JTextField(5);
+  private JTextField A = new JTextField(5);
+
+  
+  public Final_1() {
+    JPanel Main = new JPanel(new BorderLayout());
+  
+    add(Main);
+  }
+  
+  public static void main(String[] args) {
+    Final_2 frame = new Final_2();
+    frame.setTitle("CPE 121:Frame Layout");
+    frame.setSize(400, 200 );
+    frame.setLocationRelativeTo(null);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
+  }
+}
