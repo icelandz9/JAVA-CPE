@@ -1,0 +1,91 @@
+import java.awt.*;
+import javax.swing.*;
+public class cpe222_442_07{
+  public static void main(String args[]){
+    JFrame f;
+    JPanel p;
+    JLabel mlbl, ulbl, pwlbl;
+    JTextField usertxt, toptxt;
+    JPasswordField pwtxt;
+    JButton signbtn, ccbtn, b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, bd, be;
+    Font fn1 = new Font("Tahoma", Font.BOLD, 14);
+    Font fn2 = new Font("Courier New", Font.BOLD, 16);
+    f = new JFrame("CPE 222: Frame Layout");
+    p = new JPanel();
+    p.setLayout(new BorderLayout());
+    mlbl = new JLabel("*** กรุณาป้อนข้อมูลเข้าสู่ระบบ ***");
+    ulbl = new JLabel("Username");
+    pwlbl = new JLabel("Password");
+    usertxt = new JTextField(10);
+    toptxt = new JTextField(10);
+    pwtxt = new JPasswordField(10);
+    signbtn = new JButton("Log in");
+    ccbtn = new JButton("Cancel");
+    b1 = new JButton("1");
+    b2 = new JButton("2");
+    b3 = new JButton("3");
+    b4 = new JButton("4");
+    b5 = new JButton("5");
+    b6 = new JButton("6");
+    b7 = new JButton("7");
+    b8 = new JButton("8");
+    b9 = new JButton("9");
+    b0 = new JButton("0");
+    bd = new JButton(".");
+    be = new JButton("EXP");
+    
+    mlbl.setForeground(Color.red);
+    mlbl.setFont(fn1);
+    ulbl.setFont(fn2);
+    pwlbl.setFont(fn2);
+    usertxt.setFont(fn1);
+    pwtxt.setFont(fn1);
+    signbtn.setFont(fn2);
+    ccbtn.setFont(fn2);
+    
+    JPanel p1 = new JPanel();
+    p1.setLayout(new GridLayout(2,1));
+    JPanel p2 = new JPanel();
+    p2.setLayout(new GridLayout(2,2));
+    JPanel p3 = new JPanel();
+    p3.setLayout(new FlowLayout());
+    JPanel p4 = new JPanel();
+    p4.setLayout(new GridLayout(4,3));
+    JPanel p5 = new JPanel();
+    p5.setLayout(new BorderLayout());
+    JPanel p6 = new JPanel();
+    p6.setLayout(new FlowLayout());
+    
+    p4.add(b1);
+    p4.add(b2);
+    p4.add(b3);
+    p4.add(b4);
+    p4.add(b5);
+    p4.add(b6);
+    p4.add(b7);
+    p4.add(b8);
+    p4.add(b9);
+    p4.add(b0);
+    p4.add(bd);
+    p4.add(be);
+    p2.add(ulbl);
+    p2.add(usertxt);
+    p2.add(pwlbl);
+    p2.add(pwtxt);
+    p3.add(signbtn);
+    p3.add(ccbtn);
+    p1.add(p2);
+    p1.add(p3);
+    p6.add(mlbl,BorderLayout.NORTH);
+    p5.add(p6);
+    p5.add(p1,BorderLayout.SOUTH);
+    p.add(toptxt,BorderLayout.NORTH);
+    p.add(p5,BorderLayout.WEST);
+    p.add(p4,BorderLayout.EAST);
+    
+    f.add(p);
+    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    f.setSize(455,200);
+    f.setVisible(true);
+  }
+}

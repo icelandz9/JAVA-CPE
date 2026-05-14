@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class q53{
+  public static void main(String[] args){
+    Scanner sn = new Scanner(System.in);
+    
+    CircularRing cr1 = new CircularRing();
+    cr1.printCircularRing();
+    
+    CircularRing cr2 = new CircularRing(7.0,15.0);
+    cr2.printCircularRing();
+
+  }
+}

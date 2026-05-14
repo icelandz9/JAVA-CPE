@@ -1,0 +1,10 @@
+import java.util.Scanner;
+  public class Ex7
+{
+  public static void main(String[] args)
+  {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter a point with two coordinates : ");
+    double x = sn.nextInt();
+    double y = sn.nextInt();
+    double distance = Math.sqrt(pow(x,2)+pow(y,2));

@@ -1,0 +1,30 @@
+คุณใช้พื้นที่เก็บข้อมูลไป 89% แล้ว … หากพื้นที่เก็บข้อมูลเต็ม คุณจะอัปโหลดไฟล์ใหม่ไม่ได้ดูข้อมูลเพิ่มเติม
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class s_2Clock extends JFrame{
+  private StillClock clock_1 = new StillClock();
+  private StillClock_1 clock_2 = new StillClock_1();
+  
+  public s_2Clock(){
+    setLayout(new GridLayout(1,2));  
+    add(clock_1); add(clock_2);
+    Timer timer = new Timer(1000,new TimerListener());
+    timer.start();
+  }
+  
+  private class TimerListener implements ActionListener{
+    public void actionPerformed(ActionEvent e){
+      clock_1.setCurrentTime();
+      clock_1.repaint();
+    }
+  } 
+  public static void main(String[]args){
+    JFrame frame = new s_2Clock();
+    frame.setTitle("ClockAnimation");
+    frame.setLocationRelativeTo(null);
+    frame.setSize(1000,500);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);}
+}

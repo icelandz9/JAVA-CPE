@@ -1,0 +1,8 @@
+import java.util.Scanner;
+  public class quiz2_1
+{
+  public static void main(String[] args)
+  {
+    
+  }
+}

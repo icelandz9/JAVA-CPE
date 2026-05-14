@@ -1,0 +1,32 @@
+import java.lang.String;
+import java.util.Scanner;
+public class Ex4
+{
+  public static void main(String[] args)
+  {
+    Scanner input= new Scanner(System.in);
+    System.out.println("Enter your message :");
+    String str1 = input.nextLine();
+    sumNumbers(str1);
+  }
+  public static void sumNumbers(String str)
+  {
+    char[] ch = new char[str.length()];
+    int sum=0,count=0,num=0;
+    for(int i = 0;i<str.length();i++)
+    {
+      ch[i] = str.charAt(i);
+      if(ch[i]=='0'||ch[i]=='1'||ch[i]=='2'||ch[i]=='3'||ch[i]=='4'||ch[i]=='5'||ch[i]=='6'||ch[i]=='7'||ch[i]=='8'||ch[i]=='9')
+      {
+        num = (num*10)+(ch[i]-'0');
+      }
+      else
+      {
+        sum+=num;
+        num=0;
+      }
+    }
+    sum+=num;//if last char is number 
+    System.out.println(sum);
+  }
+}

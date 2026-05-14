@@ -1,0 +1,15 @@
+public class Superman extends SuperHero{
+    private String power;
+    public Superman() {
+        super("Superman"); this.power = "I can fly.";
+    }
+    public Superman(String n, String power) {
+        super(n); this.power = power;
+    }
+    @Override
+    public String toString() {
+        StringBuffer buffer = new StringBuffer();
+        buffer.append(super.toString() + ". " + this.power);
+        return new String(buffer);
+    }
+}

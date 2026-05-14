@@ -1,4 +1,3 @@
-package Quiz.Quiz_Graymatter.Final.Final63.Final63_5;
 
 public class Final63_5 {
     public static void main(String[] args) {

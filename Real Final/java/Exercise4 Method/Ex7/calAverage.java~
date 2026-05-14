@@ -1,0 +1,11 @@
+public class calAverage
+{
+  public static int average(int i1,int i2,int i3,int i4,int i5)
+  {
+    
+  }
+  public static int average(int i1,int i2,int i3,int i4,int i5)
+  {
+    
+  }
+}

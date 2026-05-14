@@ -1,0 +1,15 @@
+import java.util.Scanner
+public class quiz06_1
+{
+  public static void main(String[] args)
+  {
+    Scanner input= new Scanner(System.in);
+    System.out.println("Programs for computing the equation of straight-line result");
+    System.out.print("Enter c value: ");
+    int c = input.nextInt();
+    System.out.print("\tEnter m value: ");
+    int m = input.nextInt();
+    System.out.print("Enter total number of Y: ");
+    int y = input.nextInt();
+  }
+}

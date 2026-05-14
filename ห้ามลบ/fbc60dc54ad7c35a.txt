@@ -1,0 +1,52 @@
+import java.util.*;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter your insulin sensitivity : ");
+		double insSens = sc.nextDouble();
+		System.out.print("Enter your carb per insulin unit : ");
+		double carbPerIns = sc.nextDouble();
+		System.out.print("Enter current blood sugar level (mg/dL) : ");
+		double curBloodSugar = sc.nextDouble();
+		System.out.print("Enter target blood sugar level (mg/dL) : ");
+		double tarBloodSugar = sc.nextDouble();
+		System.out.print("Enter your carb value per meal (g) : ");
+		double carbVal = sc.nextDouble();
+		
+		double carb = insUnitCarb(carbVal,carbPerIns);
+		double reduce = insUnitRed(curBloodSugar,tarBloodSugar,insSens);
+		int total = insTotal(carb,reduce);
+				
+		System.out.println("Insulin units for carbs intake : "+carb);
+		System.out.println("Insulin units for correction : "+reduce);
+		
+		System.out.println("Total insulin units required : "+total+"-"+(total+1));
+		
+	}
+	
+	public static double insUnitRed(double current, double target, double sens) {
+		
+		double reduce = current - target;
+		double dose = reduce/sens;
+		
+		return dose;
+	}
+	
+	public static double insUnitCarb(double carbVal, double carbPerIns) {
+		
+		double dose = carbVal/carbPerIns;
+		
+		return dose;
+	}
+	
+	public static int insTotal (double carb, double reduce) {
+		
+		int total = (int) Math.floor(carb + reduce);
+		
+		return total;
+	}
+}

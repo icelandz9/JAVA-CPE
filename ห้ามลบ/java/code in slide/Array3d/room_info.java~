@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class room_info
+{
+  public int[][][] inptdata();
+     Scanner input = new Scanner(System.in);
+     System.ot.println("Enter total buildings");
+     int b = input.nextInt();
+     System.ot.println("Enter total floors");
+     int f = input.nextInt();
+     System.ot.println("Enter total rooms");
+     int r = input.nextInt();
+     int[] rm = new int[b][f][r];
+     for(int i=0;i<b;i++){
+       for(int j=0;j<f;j++){
+         for(int k=0;k<r;k++){
+           System.out.println("Enter total people live in building"+(i+1)+"floor"+(j+1)+"room"+(k+1)+":");
+           int p= input.nextInt();
+           rm[i][j][k] = new Integer(p);
+         }
+       }
+     }
+   return rm;
+}

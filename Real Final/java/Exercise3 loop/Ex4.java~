@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class Ex4
+{
+  public static void main(String[] args)
+  {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter a,x,n : ");
+    double a = sn.nextDouble();
+    double x = sn.nextDouble();
+    int n = sn.nextInt();
+    double sum = a*(x^n)
+  }
+}

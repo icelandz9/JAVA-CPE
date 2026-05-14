@@ -1,0 +1,22 @@
+import java.util.Scanner;
+  public class Ex3
+{
+  public static void main(String[] args)
+  {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter an integer : ");
+    int a = sn.nextInt();
+    if(a%3 == 0 && a%11==0)
+    {
+      System.out.print(a+" is divisible by both 3 and 11" );
+    }
+    else if (a%3 == 0 || a%3 == 0)
+    {
+      System.out.print(a+" is divisible by 3 or 11, but not both");
+    }
+    else
+    {
+      System.out.print(a+" is not divisible by 3 or 11);
+    }
+  }
+}

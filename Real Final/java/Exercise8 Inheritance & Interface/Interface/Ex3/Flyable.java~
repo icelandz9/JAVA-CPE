@@ -1,0 +1,17 @@
+public class Flyable{
+  public void fly(){
+   // System.out.println("can fly");
+  }
+}
+class Duck extends Flyable
+{
+  public void fly(){
+    System.out.println("I am duck. I am flying with wings");
+  }
+}
+class Plane extends Flyable
+{
+  public void fly(){
+  System.out.println("I am plane. I am flying with fuel");
+  }
+}

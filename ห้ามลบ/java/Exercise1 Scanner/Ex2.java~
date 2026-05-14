@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Ex2
+{ 
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter integer between 000 and 999 : ");
+    int A = input.nextInt();
+    int B = A%10;//5
+    int C = A/10;//49
+    int D = C%10;//9
+    int E = C/10;//4
+    int result = E*D*B;
+    System.out.println("The product of digit is" +result);
+  }
+}  

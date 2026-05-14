@@ -1,4 +1,3 @@
-package Quiz.Quiz_Graymatter.Final.Final63.Final63_5;
 
 public class OffRoad extends Car {
     public OffRoad(String model, String make, int year, int seat, int door) {

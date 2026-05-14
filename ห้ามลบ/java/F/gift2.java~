@@ -1,0 +1,36 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner
+  public class gift2
+{
+  public static void main(String[] args)
+  {
+    Scsnner in = new Scanner(Scanner.in);
+    String b = nextLine();
+   // String n = JOptionPane.showInputDialog(null,"Who are you ??");
+   // char b = n.charAt(0); 
+    switch(b)
+    {
+      case "Hana":
+       //JOptionPane.showMessageDialog(null,"Oh Hello!!! I am Bobby who Folk always hug to sleep when he's home "+"Do you remember me? "+"He has a small message want to tell you."  );
+       //JOptionPane.showMessageDialog(null,"เค้าเอง ถ้าเธอได้อ่าข้อความนี้แสดงว่าตอนนี้ก็คือวันที่เรานั่งด้วยกันสักทีนึงกำลังยิ้มและหัวเราะกันแบบมีความสุขอยู่\n"+"ขอให้เราสองคนมีวันแบบนี้เยอะๆ วันที่เราได้อยู่ด้วยกันคุยกันเข้าใจกันดูแแลกันไปแบบนนานๆตลอดไปเลย\n"+"ไม่ว่าเธอจะเจออุปสรรคอะไรหรือเจออะไรที่ทำให้เธอไม่มีความสุขเค้าจะอยู่ข้างเธอเสมอและจะพาก้าวผ่านมันไปด้วยกัน\n"+"เค้าพร้อมจะไปกับเธอทุกที่ซัพพอร์ตเธอทุกอย่างขอแค่เธอมั่นใจว่าเธออยากทำทำแล้วมีความสุขเค้าก็พร้อมจะพาเธอไปทำจนสุดทาง \n"+"เค้ารักเธอนะ" );
+       break;
+     case "Kanaisa" :
+       //JOptionPane.showMessageDialog(null,"Oh Hello!!! I am Bobby who Folk always hug to sleep when he's home "+"Do you remember me? "+"He has a small message want to tell you."  );
+       //JOptionPane.showMessageDialog(null,"เค้าเอง ถ้าเธอได้อ่าข้อความนี้แสดงว่าตอนนี้ก็คือวันที่เรานั่งด้วยกันสักทีนึงกำลังยิ้มและหัวเราะกันแบบมีความสุขอยู่\n"+"ขอให้เราสองคนมีวันแบบนี้เยอะๆ วันที่เราได้อยู่ด้วยกันคุยกันเข้าใจกันดูแแลกันไปแบบนนานๆตลอดไปเลย\n"+"ไม่ว่าเธอจะเจออุปสรรคอะไรหรือเจออะไรที่ทำให้เธอไม่มีความสุขเค้าจะอยู่ข้างเธอเสมอและจะพาก้าวผ่านมันไปด้วยกัน\n"+"เค้าพร้อมจะไปกับเธอทุกที่ซัพพอร์ตเธอทุกอย่างขอแค่เธอมั่นใจว่าเธออยากทำทำแล้วมีความสุขเค้าก็พร้อมจะพาเธอไปทำจนสุดทาง\n"+"เค้ารักเธอนะ" );
+       break;
+     case "hana":
+       //JOptionPane.showMessageDialog(null,"Oh Hello!!! I am Bobby who Folk always hug to sleep when he's home "+"Do you remember me? "+"He has a small message want to tell you."  );
+       //JOptionPane.showMessageDialog(null,"เค้าเอง ถ้าเธอได้อ่าข้อความนี้แสดงว่าตอนนี้ก็คือวันที่เรานั่งด้วยกันสักทีนึงกำลังยิ้มและหัวเราะกันแบบมีความสุขอยู่\n"+"ขอให้เราสองคนมีวันแบบนี้เยอะๆ วันที่เราได้อยู่ด้วยกันคุยกันเข้าใจกันดูแแลกันไปแบบนนานๆตลอดไปเลย\n"+"ไม่ว่าเธอจะเจออุปสรรคอะไรหรือเจออะไรที่ทำให้เธอไม่มีความสุขเค้าจะอยู่ข้างเธอเสมอและจะพาก้าวผ่านมันไปด้วยกัน\n"+"เค้าพร้อมจะไปกับเธอทุกที่ซัพพอร์ตเธอทุกอย่างขอแค่เธอมั่นใจว่าเธออยากทำทำแล้วมีความสุขเค้าก็พร้อมจะพาเธอไปทำจนสุดทาง \n"+"เค้ารักเธอนะ" );
+       break;
+     case "kanisa" :
+       //JOptionPane.showMessageDialog(null,"Oh Hello!!! I am Bobby who Folk always hug to sleep when he's home "+"Do you remember me? "+"He has a small message want to tell you."  );
+       //JOptionPane.showMessageDialog(null,"เค้าเอง ถ้าเธอได้อ่าข้อความนี้แสดงว่าตอนนี้ก็คือวันที่เรานั่งด้วยกันสักทีนึงกำลังยิ้มและหัวเราะกันแบบมีความสุขอยู่\n"+"ขอให้เราสองคนมีวันแบบนี้เยอะๆ วันที่เราได้อยู่ด้วยกันคุยกันเข้าใจกันดูแแลกันไปแบบนนานๆตลอดไปเลย\n"+"ไม่ว่าเธอจะเจออุปสรรคอะไรหรือเจออะไรที่ทำให้เธอไม่มีความสุขเค้าจะอยู่ข้างเธอเสมอและจะพาก้าวผ่านมันไปด้วยกัน\n"+"เค้าพร้อมจะไปกับเธอทุกที่ซัพพอร์ตเธอทุกอย่างขอแค่เธอมั่นใจว่าเธออยากทำทำแล้วมีความสุขเค้าก็พร้อมจะพาเธอไปทำจนสุดทาง\n"+"เค้ารักเธอนะ" );
+       break;
+      default: 
+        //JOptionPane.showMessageDialog(null,"You don't have an acess","Error",JOptionPane.ERROR_MESSAGE);
+        break;
+        
+    }
+
+  }
+ }

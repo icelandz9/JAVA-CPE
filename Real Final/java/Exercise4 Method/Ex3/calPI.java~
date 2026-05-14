@@ -1,0 +1,11 @@
+public class calPI
+{
+  static int cal=0,j;
+  public static double m(int i)
+  {
+    for(j=1;j<=i;j++)
+    cal += (Math.pow((-1),(j+1))/((2*j)-1));
+    return 4*cal;//(Math.pow((-1),(i+1))/((2*i)-1));
+      
+  }
+}

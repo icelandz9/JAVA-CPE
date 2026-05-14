@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Cpe222_4{
+  public static void main(String[] args){
+    Scanner in = new Scanner(System.in);
+    System.out.println("Enter a number :");
+    double n, sum; 
+    n = in.nextInt();
+    sum = sumDigits(n);
+     System.out.println("The sum of digits for "+n+" is "+dig);
+    sn.close();
+  }

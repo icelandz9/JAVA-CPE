@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class EP3 {
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    int Input = sc.nextInt();
+    for(int 1 = 0; 1 < input ; i++){
+      for(int j = 0 ; j <= i ; j++){
+        System.out.print(" ");
+      }
+    }
+  }
+}

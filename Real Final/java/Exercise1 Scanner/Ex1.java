@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Ex1
+{ 
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter inches as an integer : ");
+    double num = input.nextDouble();
+    //end input
+    double result = num/0.3937;
+    System.out.println("The value in centimete is :" + result);
+    input.close();
+  }
+}  

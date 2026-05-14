@@ -1,5 +1,3 @@
-package Quiz.Quiz_Graymatter.Final;
-
 import javax.swing.*; // ����Ѻ JPanel, JFrame
 import java.awt.*; // ����Ѻ Graphics, Color, Polygon
 
@@ -8,7 +6,6 @@ class StarPanel1 extends JPanel {
     public int plusX = 0;
     public int plusY = 0;
 
-    @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         int x1 = getWidth() / 8;

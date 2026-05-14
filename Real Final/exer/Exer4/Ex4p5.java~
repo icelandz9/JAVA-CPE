@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class ex4_5{
+  public static void main(String[] args){
+    Scanner sn = new Scanner(System.in);
+    int number, i, rev;
+    System.out.print("Enter an integer :");
+    number = sn.nextInt();
+    for(i=1;i<=10;i++)
+    {
+      rev = reverse(number);
+      System.out.print(rev);
+      number = number/10;
+      if(number==0)
+      {
+        break;
+      }
+    }
+    sn.close();
+  }
+  
+  public static int reverse(int number){
+    int digi;
+    digi = number%10;
+    return digi;
+  }
+}

@@ -1,0 +1,5 @@
+public class calArea
+{
+  public static double area(int n,double side);
+  return((n*(Math.pow(n,2)))/(4*(Math.tan(Math.pi/n))));
+}

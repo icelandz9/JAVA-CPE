@@ -1,0 +1,38 @@
+import java.util.Scanner;  // นำเข้า Scanner เพื่อรับค่าจากคีย์บอร์ด
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);  // สร้างอ็อบเจ็กต์ Scanner
+
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();  // รับค่าชื่อจากผู้ใช้
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();  // รับค่าอายุ (เป็นตัวเลข)
+
+        System.out.println("Hello, " + name + "! You are " + age + " years old."); // แสดงผล
+
+        scanner.close();  // ปิด Scanner เพื่อป้องกัน Resource Leak
+    }
+}
+
+ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
+Enter your name: Alice
+Enter your age: 25
+Hello, Alice! You are 25 years old.
+
+-----------------------------------------------THE END----------------------------------------------------------------------------
+อธิบายโครงสร้างสำคัญที่ต้องมีใน Java:
+🔹public class Main
+=Java ต้องมี Class เสมอ และชื่อคลาสต้องตรงกับชื่อไฟล์ .java
+=ถ้าตั้งชื่อไฟล์ว่า Main.java คลาสต้องชื่อ Main
+🔹 public static void main(String[] args)
++ทุกโปรแกรม ต้องมี main() เพราะเป็นจุดเริ่มต้นของโปรแกรม
++public = สามารถเรียกใช้งานได้จากภายนอก
++static = ใช้งานเมธอดนี้ได้โดยไม่ต้องสร้างอ็อบเจ็กต์ของคลาส
++void = ไม่มีค่าที่ return ออกมา
++String[] args = รับค่าจาก command line (ถ้ามี)
+🔹System.out.println("Hello, Java!");
+-ใช้แสดงผลข้อความบนหน้าจอ
+-เป็นคำสั่งที่ใช้เช็คว่ารันโปรแกรมได้หรือไม่
+-System.out.print() ก็ใช้ได้แต่จะไม่ขึ้นบรรทัดใหม่

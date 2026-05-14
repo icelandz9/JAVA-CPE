@@ -1,0 +1,57 @@
+public class Square{
+  private double width;
+  private double length;
+  private double height;
+  
+  public Square(){
+    this.width = 1;
+    this.length = 1;
+    this.height = 1;
+  }
+  public Square(double w, double l){ 
+    this.width = w;
+    this.length = l;
+    this.height = 1;
+  }
+   public Square(double w, double l,double h){ 
+    this.width = w;
+    this.length = l;
+    this.height = h;
+  }
+   public double getSquareArea(){
+     double squarearea = width*length;
+    return squarearea;
+   }
+   public double getBorderLength(){
+     double borderlength = (width*2)+(length*2);
+    return borderlength;
+   }
+    public double getSurfaceAreaAllSides(){
+     double surfaceareaallsides = (width*2)+(length*2);
+    return surfaceareaallsides;
+   }
+    public double getLength(){
+     double length;
+    return length;
+   }
+    public double getLength(){
+     double length = length*2.54;
+    return length;
+   }
+    public double getWidth(){
+     double width = width*2.54;
+    return width;
+   }
+    public double getHeight(){
+     double height = height*2.54;
+    return height;
+   }
+     public void printSquare()
+    {
+      System.out.println("\nAll parameters of this Square");
+      System.out.println("Width = " +getWidth()+ " cm Length = " +getLength()+ " cm Height = " +getHeight()+ "cm");
+      System.out.println("Square Area = "+getSquareArea()+ " cm2");
+      System.out.println("Border Length of Square = "+getBorderLength()+ " cm2");
+      System.out.println("Surface Area of All Sides = " +getSurfaceAreaAllSides()+ " cm2");
+    }
+   

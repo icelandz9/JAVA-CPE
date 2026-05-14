@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Ex3
+{ 
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Emter the number of seconds : ");
+    int hour = input.nextInt();
+  }
+}  

@@ -1,0 +1,73 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Main{
+	
+	public static void main(String[] args) {	
+		
+		String AniList[] = {"Free Elective","104","120","121","140","193","194"};
+		String type[] = {"Faculty of Science","Faculty of Social Sciences","Faculty of Physical Education","Faculty of Physical Therapy","Faculty of Phamacy","Faculty of Engineering","Faculty of Nurse"};
+		
+		JLabel mainL = new JLabel("*** Please login ***");
+		mainL.setVerticalAlignment(JLabel.TOP);
+		mainL.setHorizontalAlignment(JLabel.CENTER);
+		mainL.setForeground(Color.RED);
+		
+		JPanel button1 = new JPanel();
+		button1.add(new JButton("Log in"),BorderLayout.EAST);
+		JPanel button2 = new JPanel();
+		button2.add(new JButton("Cancel"),BorderLayout.WEST);
+		JPanel button3 = new JPanel();
+		button3.add(new JButton("Enter"),BorderLayout.CENTER);
+		
+		JPanel p1 = new JPanel(new GridLayout(3,2));
+		p1.add(new JLabel("username"));
+		p1.add(new JTextField(20));
+		p1.add(new JLabel("password"));
+		p1.add(new JTextField(20));
+		p1.add(button1);
+		p1.add(button2);
+		
+		JPanel box = new JPanel(new GridLayout(1,5));
+		box.add(new JCheckBox("Ongkharak"));
+		box.add(new JCheckBox("Prasanmit"));
+		box.add(new JRadioButton("CPE"));
+		box.add(new JRadioButton("SWU"));
+		box.add(new JRadioButton("Oth"));
+		
+		JPanel list = new JPanel(new GridLayout(1,2));
+		list.add(new JComboBox(type));
+		list.add(new JScrollPane(new JList(AniList)));
+		
+		
+		JPanel lb = new JPanel(new GridLayout(2,1));
+		lb.add(box);
+		lb.add(list);
+		
+		JTextField text = new JTextField("Number to be displayed here");
+		
+		JPanel button = new JPanel(new GridLayout(4,4));
+		button.add(new JButton("1")); button.add(new JButton("2")); button.add(new JButton("3")); button.add(new JButton("+"));
+		button.add(new JButton("4")); button.add(new JButton("5")); button.add(new JButton("6")); button.add(new JButton("-"));
+		button.add(new JButton("7")); button.add(new JButton("8")); button.add(new JButton("9")); button.add(new JButton("x"));
+		button.add(new JButton(".")); button.add(new JButton("0")); button.add(new JButton("%")); button.add(new JButton("/"));
+		
+		JPanel cal = new JPanel(new GridLayout(3,1));
+		cal.add(text,BorderLayout.NORTH);
+		cal.add(button,BorderLayout.CENTER);
+		cal.add(button3,BorderLayout.SOUTH);
+		
+		JPanel mainP = new JPanel(new GridLayout(4,1));
+		mainP.add(mainL);
+		mainP.add(p1);
+		mainP.add(lb);
+		mainP.add(cal);
+		
+		JFrame f = new JFrame("CPE 121 : Quiz 11 GUI");
+		f.setSize(500,700);
+		f.setVisible(true);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.add(mainP);
+
+	}
+}	

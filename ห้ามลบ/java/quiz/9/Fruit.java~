@@ -1,0 +1,14 @@
+public class Fruit implements Edible
+{
+  public String howToEat()
+  {
+    return "Fruit is healthy food";
+  }
+}
+class Coconut extends Fruit
+{
+  public String howToEat()
+  {
+    return "Coconut: Refreshing with ice coconut water";
+  }
+}

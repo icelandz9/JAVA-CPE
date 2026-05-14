@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class equation{
+  public static void main(String[] args){
+   double a,b,c,d,e,f,x,y,z;
+     Scanner ans = new Scanner(System.in);
+     System.out.print("Enter a,b,c,d,e,f:");
+     a = ans.nextDouble();
+     b = ans.nextDouble();
+     c = ans.nextDouble();
+     d = ans.nextDouble();
+     e = ans.nextDouble();
+     f = ans.nextDouble();
+     z = (a*d)-(b*c);
+     x = ((e*d)-(b*f))/z;
+     y = ((a*f)-(e*c))/z;
+     
+    if(z!=0) {
+    System.out.println("Enter a, b, c, d, e, f : "+ a +" "+ b +" "+ c +" "+ d +" "+ e +" "+ f);
+    System.out.println("x is "+x+" and y is "+y);
+    }
+    else if(z==0) {
+    System.out.println("Enter a, b, c, d, e, f : "+ a +" "+ b +" "+ c +" "+ d +" "+ e +" "+ f);
+    System.out.println("The equation has no solution");
+    }
+  }
+}

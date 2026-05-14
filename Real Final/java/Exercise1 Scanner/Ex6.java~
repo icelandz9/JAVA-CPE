@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class Ex6
+{ 
+  public static void main(String[] args)
+  {
+    String R = JOptionPane.showInputDialog(null,"Enter Redius of cylinder");
+    String l = JOptionPane.showInputDialog(null,"Enter Length of cylinder");
+    double r1 = duuble
+    JOptionPane.showMessageDialog(null, "The area is" +a);
+    JOptionPane.showMessageDialog(null, "The volume is" +a);
+  }
+}  

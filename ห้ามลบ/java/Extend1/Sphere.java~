@@ -1,0 +1,32 @@
+public class Sphere
+{
+  public double CirclePi=3.14;
+  private double radius;
+  public Spere()
+  {
+    radius=5;
+  }
+  public Spere(double r)
+  {
+    radius=r;
+  }
+  public double getSpereSurface()
+  {
+    return 4*CirclePi*Math.pow(radius,2);
+  }
+  public double getSphereVolume()
+  {
+    return (4/3)*CirclePi*Math.pow(r,3);
+  }
+  public double getRadius()
+  {
+    return radius;
+  }
+  void printSphere()
+  {
+    System.out.println("All parameters of this Sphere");
+    System.out.println("Radius = "+getRadius());
+    System.out.println("Sphere Surface Area = "+getSpereSurface);
+    System.out.println("Sphere Volume = "getSphereVolume());
+  }
+}

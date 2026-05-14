@@ -1,0 +1,44 @@
+public class ClosedFigure
+{
+  private String color;
+  public ClosedFigure(String color){
+    this.color=color;
+  }
+  public ClosedFigure(){
+    this.color="white";
+  }
+  public abstract double getArea();
+  public abstract double getPerimeter();
+  public String getColor(){
+    return color;
+  }
+  public void setColor(String color){
+    this.color = color;
+  }
+}
+class Circle extends ClosedFigure
+{
+  private double radius;
+  Public Circle(double radius String color){
+    this.radius=radius;
+    super(color);
+  }
+  public Circle() {
+    this.radius = 1;
+  }
+  public double getArea(){
+    return Math.PI*Math.pow(this.radius,2);
+  }
+  public double getPerimeter(){
+    return 2*Math.PI*this.radius;
+  }
+  public double getRadius(){
+    return this.radius;
+  }
+  public double getDiameter(){
+    return 2*this.radius;
+  }
+  public String toString(){
+   return "(radius,diameter,area,perameter,color)=("+getradius+","+getDiameter+","+getArea+","+getPerimeter+","+super.getColor+")"; 
+  }
+}

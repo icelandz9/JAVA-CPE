@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class TEST {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the number of rows and column of the array :");
+        int row = scan.nextInt();
+        int column = scan.nextInt();
+        int[][] mx = new int[row][column];
+        for(int i=0;i< mx.length;i++) {
+            for (int j = 0; j < mx[i].length; j++) {
+                int random = (int) (Math.random()*9)+1;
+                System.out.print(" "+random);
+                mx[i][j]=random;
+            }
+            System.out.print("\n");
+        }
+        sumEvenColumns(mx);
+    }
+    public static void sumEvenColumns(int[][] matrix){
+        int resultc=0;
+        for(int i =0;i<matrix[i].length;i+=2){
+            for (int j=0;j<matrix.length;j++){
+            resultc += matrix[j][i];
+            }
+            System.out.println("Sum of the elements at column ["+i+"] is "+resultc);
+            resultc=0;
+         }
+        }
+    }

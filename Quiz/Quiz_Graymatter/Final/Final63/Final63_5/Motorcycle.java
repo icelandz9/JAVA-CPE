@@ -1,4 +1,3 @@
-package Quiz.Quiz_Graymatter.Final.Final63.Final63_5;
 
 public class Motorcycle extends MotorVehicle {
     private String engineType;

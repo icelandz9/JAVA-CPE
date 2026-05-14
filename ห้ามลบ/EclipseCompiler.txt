@@ -1,0 +1,355 @@
+28 Mar 2025 4:09:12 GMT: Log 'EclipseCompiler.txt' opened: 28 Mar 2025 4:09:12 GMT with name C:\Users\67109010195\Desktop\EclipseCompiler.txt
+28 Mar 2025 5:33:57 GMT: diagnostics = javax.tools.DiagnosticCollector@15293ad5
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@47248f2d
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:33:57 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@281be9a3' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:33:58 GMT: Compiler call returned
+28 Mar 2025 5:33:58 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@44c868ef
+28 Mar 2025 5:33:58 GMT:  Kind = ERROR
+28 Mar 2025 5:33:58 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 11 Msg = 'ArithmticException cannot be resolved to a type'
+28 Mar 2025 5:34:17 GMT: diagnostics = javax.tools.DiagnosticCollector@72c82ff2
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@124b9b0f
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:34:17 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@6d63466d' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:34:17 GMT: Compiler call returned
+28 Mar 2025 5:34:17 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@3c813d9a
+28 Mar 2025 5:34:17 GMT:  Kind = WARNING
+28 Mar 2025 5:34:17 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:35:11 GMT: diagnostics = javax.tools.DiagnosticCollector@4faa1e10
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1e12ca46
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:35:11 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@6e44210d' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:35:11 GMT: Compiler call returned
+28 Mar 2025 5:35:11 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@3d46bc7
+28 Mar 2025 5:35:11 GMT:  Kind = WARNING
+28 Mar 2025 5:35:11 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:35:22 GMT: diagnostics = javax.tools.DiagnosticCollector@a3950b9
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@47445432
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:35:22 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@6d8d78d' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:35:22 GMT: Compiler call returned
+28 Mar 2025 5:35:22 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1bc061ee
+28 Mar 2025 5:35:22 GMT:  Kind = WARNING
+28 Mar 2025 5:35:22 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:38:22 GMT: diagnostics = javax.tools.DiagnosticCollector@d8e2a31
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1210e334
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:38:22 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@71dce2f1' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:38:22 GMT: Compiler call returned
+28 Mar 2025 5:38:22 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@5171f4a2
+28 Mar 2025 5:38:22 GMT:  Kind = WARNING
+28 Mar 2025 5:38:22 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:38:42 GMT: diagnostics = javax.tools.DiagnosticCollector@5257bc6e
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@595a56c8
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:38:42 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@6c3af2ae' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:38:42 GMT: Compiler call returned
+28 Mar 2025 5:38:42 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@7cb053fd
+28 Mar 2025 5:38:42 GMT:  Kind = WARNING
+28 Mar 2025 5:38:42 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:39:43 GMT: diagnostics = javax.tools.DiagnosticCollector@14aa6098
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@3ab80747
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:39:43 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@3ce5b34f' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:39:43 GMT: Compiler call returned
+28 Mar 2025 5:39:43 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@7a9f3ae4
+28 Mar 2025 5:39:43 GMT:  Kind = ERROR
+28 Mar 2025 5:39:43 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 17 ColNo = 11 Msg = 'Type mismatch: cannot convert from int to double[]'
+28 Mar 2025 5:41:05 GMT: diagnostics = javax.tools.DiagnosticCollector@1c126ad0
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@760041a7
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:41:05 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@4ef40c75' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:41:05 GMT: Compiler call returned
+28 Mar 2025 5:41:05 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@402e8bdc
+28 Mar 2025 5:41:05 GMT:  Kind = WARNING
+28 Mar 2025 5:41:05 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:41:28 GMT: diagnostics = javax.tools.DiagnosticCollector@35e6c8da
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@ce6a686
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:41:28 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@15ad2b3a' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:41:28 GMT: Compiler call returned
+28 Mar 2025 5:41:28 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@54205c3
+28 Mar 2025 5:41:28 GMT:  Kind = WARNING
+28 Mar 2025 5:41:28 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:41:45 GMT: Log 'EclipseCompiler.txt' opened: 28 Mar 2025 5:41:45 GMT with name C:\Users\67109010195\Desktop\EclipseCompiler.txt
+28 Mar 2025 5:44:34 GMT: diagnostics = javax.tools.DiagnosticCollector@5135d10
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@17772cb
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 5:44:34 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@11c26971' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:44:35 GMT: Compiler call returned
+28 Mar 2025 5:44:35 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@79360e9f
+28 Mar 2025 5:44:35 GMT:  Kind = WARNING
+28 Mar 2025 5:44:35 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 14 ColNo = 13 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 5:46:16 GMT: diagnostics = javax.tools.DiagnosticCollector@f4e664
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@7cec511f
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 5:46:16 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@2f74d2a6' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:46:16 GMT: Compiler call returned
+28 Mar 2025 5:46:16 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1667fb17
+28 Mar 2025 5:46:16 GMT:  Kind = WARNING
+28 Mar 2025 5:46:16 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 14 ColNo = 13 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 5:47:13 GMT: diagnostics = javax.tools.DiagnosticCollector@84178ef
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@383274af
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 5:47:13 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@7037b043' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:47:13 GMT: Compiler call returned
+28 Mar 2025 5:47:13 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@3cdca319
+28 Mar 2025 5:47:13 GMT:  Kind = WARNING
+28 Mar 2025 5:47:13 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 16 ColNo = 5 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 5:50:04 GMT: diagnostics = javax.tools.DiagnosticCollector@7836ea39
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1deeb4a4
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 5:50:04 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@2407d017' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:50:04 GMT: Compiler call returned
+28 Mar 2025 5:50:04 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@365a5679
+28 Mar 2025 5:50:04 GMT:  Kind = WARNING
+28 Mar 2025 5:50:04 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 16 ColNo = 5 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 5:50:55 GMT: diagnostics = javax.tools.DiagnosticCollector@199d24cc
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@9725bc6
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 5:50:55 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@2fad39f8' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:50:55 GMT: Compiler call returned
+28 Mar 2025 5:50:55 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@5445e673
+28 Mar 2025 5:50:55 GMT:  Kind = WARNING
+28 Mar 2025 5:50:55 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 14 ColNo = 13 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 5:55:18 GMT: diagnostics = javax.tools.DiagnosticCollector@17578587
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1a1d7564
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:55:18 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@30c8dde4' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:55:18 GMT: Compiler call returned
+28 Mar 2025 5:55:18 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@3908ad96
+28 Mar 2025 5:55:18 GMT:  Kind = WARNING
+28 Mar 2025 5:55:18 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:55:43 GMT: diagnostics = javax.tools.DiagnosticCollector@4a7eb33e
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@4ecb5cdb
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:55:43 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1e0304b4' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:55:43 GMT: Compiler call returned
+28 Mar 2025 5:55:43 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1775c7cc
+28 Mar 2025 5:55:43 GMT:  Kind = WARNING
+28 Mar 2025 5:55:43 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 5:55:55 GMT: diagnostics = javax.tools.DiagnosticCollector@735cc89e
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1e77b1d8
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 5:55:55 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@5d6f2270' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 5:55:55 GMT: Compiler call returned
+28 Mar 2025 5:55:55 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1cd4bc2e
+28 Mar 2025 5:55:55 GMT:  Kind = WARNING
+28 Mar 2025 5:55:55 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 7 ColNo = 15 Msg = 'Resource leak: 'sn' is never closed'
+28 Mar 2025 6:02:05 GMT: diagnostics = javax.tools.DiagnosticCollector@18c5d144
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@389f48fc
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:02:05 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@61243b10' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:02:05 GMT: Compiler call returned
+28 Mar 2025 6:02:05 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@3f24e855
+28 Mar 2025 6:02:05 GMT:  Kind = ERROR
+28 Mar 2025 6:02:05 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 17 ColNo = 26 Msg = 'Syntax error, insert ")" to complete Expression'
+28 Mar 2025 6:02:05 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@9eb80b7
+28 Mar 2025 6:02:05 GMT:  Kind = ERROR
+28 Mar 2025 6:02:05 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 44 Msg = 'Syntax error, insert ")" to complete Expression'
+28 Mar 2025 6:02:17 GMT: diagnostics = javax.tools.DiagnosticCollector@43d112f5
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@614c38e5
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:02:17 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@f2c4202' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:02:17 GMT: Compiler call returned
+28 Mar 2025 6:02:17 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@233104f9
+28 Mar 2025 6:02:17 GMT:  Kind = ERROR
+28 Mar 2025 6:02:17 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 17 ColNo = 24 Msg = 'Syntax error, insert ")" to complete Expression'
+28 Mar 2025 6:02:17 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@39a78194
+28 Mar 2025 6:02:17 GMT:  Kind = ERROR
+28 Mar 2025 6:02:17 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 44 Msg = 'Syntax error, insert ")" to complete Expression'
+28 Mar 2025 6:02:27 GMT: diagnostics = javax.tools.DiagnosticCollector@7e5877d4
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@251a5ba4
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:02:27 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@63f8a465' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:02:27 GMT: Compiler call returned
+28 Mar 2025 6:02:27 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1d4fd851
+28 Mar 2025 6:02:27 GMT:  Kind = ERROR
+28 Mar 2025 6:02:27 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 44 Msg = 'Syntax error, insert ")" to complete Expression'
+28 Mar 2025 6:02:36 GMT: diagnostics = javax.tools.DiagnosticCollector@2bf9f4ac
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@796d66f2
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:02:36 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@39737c50' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:02:36 GMT: Compiler call returned
+28 Mar 2025 6:02:36 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@31c88529
+28 Mar 2025 6:02:36 GMT:  Kind = ERROR
+28 Mar 2025 6:02:36 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 16 ColNo = 7 Msg = 'scanner cannot be resolved'
+28 Mar 2025 6:02:36 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@724cd455
+28 Mar 2025 6:02:36 GMT:  Kind = ERROR
+28 Mar 2025 6:02:36 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 19 ColNo = 11 Msg = 'Type mismatch: cannot convert from int to int[]'
+28 Mar 2025 6:02:36 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@5dfc5814
+28 Mar 2025 6:02:36 GMT:  Kind = ERROR
+28 Mar 2025 6:02:36 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 31 Msg = 'The method ceil(double) in the type java.lang.Math is not applicable for the arguments (java.lang.String)'
+28 Mar 2025 6:03:04 GMT: diagnostics = javax.tools.DiagnosticCollector@14e0f7f9
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@52a842df
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:03:04 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@2727417a' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:03:04 GMT: Compiler call returned
+28 Mar 2025 6:03:04 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@1fdb9b4f
+28 Mar 2025 6:03:04 GMT:  Kind = ERROR
+28 Mar 2025 6:03:04 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 19 ColNo = 11 Msg = 'Type mismatch: cannot convert from int to int[]'
+28 Mar 2025 6:03:04 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@2d374fc6
+28 Mar 2025 6:03:04 GMT:  Kind = ERROR
+28 Mar 2025 6:03:04 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 31 Msg = 'The method ceil(double) in the type java.lang.Math is not applicable for the arguments (java.lang.String)'
+28 Mar 2025 6:03:20 GMT: diagnostics = javax.tools.DiagnosticCollector@4b78e15a
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@7611db37
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:03:20 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@6a3af87b' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:03:20 GMT: Compiler call returned
+28 Mar 2025 6:03:20 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@5b826d4
+28 Mar 2025 6:03:20 GMT:  Kind = ERROR
+28 Mar 2025 6:03:20 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 31 Msg = 'The method ceil(double) in the type java.lang.Math is not applicable for the arguments (java.lang.String)'
+28 Mar 2025 6:04:28 GMT: diagnostics = javax.tools.DiagnosticCollector@424738f2
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@6573c1e0
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:04:28 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@646d0b' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:04:28 GMT: Compiler call returned
+28 Mar 2025 6:04:28 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@6d95370b
+28 Mar 2025 6:04:28 GMT:  Kind = ERROR
+28 Mar 2025 6:04:28 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 31 Msg = 'The method cell(java.lang.String) is undefined for the type java.lang.Math'
+28 Mar 2025 6:04:45 GMT: diagnostics = javax.tools.DiagnosticCollector@43e17a1e
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@5c6aab7d
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:04:45 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@1ae4d2b3' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:04:45 GMT: Compiler call returned
+28 Mar 2025 6:04:45 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@575a83e5
+28 Mar 2025 6:04:45 GMT:  Kind = ERROR
+28 Mar 2025 6:04:45 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 31 Msg = 'The method cell(int) is undefined for the type java.lang.Math'
+28 Mar 2025 6:05:25 GMT: diagnostics = javax.tools.DiagnosticCollector@36b2386b
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@27af74d2
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:05:25 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@3dcb4346' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:05:25 GMT: Compiler call returned
+28 Mar 2025 6:05:25 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@de471c4
+28 Mar 2025 6:05:25 GMT:  Kind = ERROR
+28 Mar 2025 6:05:25 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 21 ColNo = 31 Msg = 'The method cell(int) is undefined for the type java.lang.Math'
+28 Mar 2025 6:07:48 GMT: diagnostics = javax.tools.DiagnosticCollector@16e37941
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@1c97145a
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:07:48 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@19296f22' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:07:48 GMT: Compiler call returned
+28 Mar 2025 6:07:48 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@2e8e0985
+28 Mar 2025 6:07:48 GMT:  Kind = ERROR
+28 Mar 2025 6:07:48 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 16 ColNo = 7 Msg = 'sscanner cannot be resolved'
+28 Mar 2025 6:07:48 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@582ea27b
+28 Mar 2025 6:07:48 GMT:  Kind = ERROR
+28 Mar 2025 6:07:48 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 31 Msg = 'The method cell(int) is undefined for the type java.lang.Math'
+28 Mar 2025 6:07:51 GMT: diagnostics = javax.tools.DiagnosticCollector@7087e75c
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@48bdce2a
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:07:51 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@3dacd861' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:07:51 GMT: Compiler call returned
+28 Mar 2025 6:07:51 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@47043212
+28 Mar 2025 6:07:51 GMT:  Kind = ERROR
+28 Mar 2025 6:07:51 GMT: Name = C:\Users\67109010195\Desktop\q8_01_195.java LineNo = 20 ColNo = 31 Msg = 'The method cell(int) is undefined for the type java.lang.Math'
+28 Mar 2025 6:08:18 GMT: diagnostics = javax.tools.DiagnosticCollector@5fd5ee2b
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@44e6b5a4
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:08:18 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@201693e8' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:08:18 GMT: Compiler call returned
+28 Mar 2025 6:08:58 GMT: diagnostics = javax.tools.DiagnosticCollector@4c095987
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@6440c9fb
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:08:58 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@374d053b' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:08:58 GMT: Compiler call returned
+28 Mar 2025 6:09:47 GMT: diagnostics = javax.tools.DiagnosticCollector@747eb5af
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@6b624e41
+fileObjects = [C:\Users\67109010195\Desktop\q8_01_195.java]
+28 Mar 2025 6:09:47 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@48214426' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:09:47 GMT: Compiler call returned
+28 Mar 2025 6:11:01 GMT: diagnostics = javax.tools.DiagnosticCollector@3a640950
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@3e0b3475
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 6:11:01 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@2ae5d6bf' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:11:01 GMT: Compiler call returned
+28 Mar 2025 6:11:01 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@7df97b31
+28 Mar 2025 6:11:01 GMT:  Kind = ERROR
+28 Mar 2025 6:11:01 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 6 ColNo = 26 Msg = 'Type mismatch: cannot convert from int to java.io.FileWriter'
+28 Mar 2025 6:11:28 GMT: diagnostics = javax.tools.DiagnosticCollector@5300add7
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@58acf445
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 6:11:28 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@4c3a7768' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:11:28 GMT: Compiler call returned
+28 Mar 2025 6:11:28 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@78ca259b
+28 Mar 2025 6:11:28 GMT:  Kind = WARNING
+28 Mar 2025 6:11:28 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 14 ColNo = 13 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 6:15:19 GMT: diagnostics = javax.tools.DiagnosticCollector@1c5b2e5a
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@393037ae
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 6:15:19 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@4379a855' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:15:19 GMT: Compiler call returned
+28 Mar 2025 6:15:19 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@280bab5
+28 Mar 2025 6:15:19 GMT:  Kind = WARNING
+28 Mar 2025 6:15:19 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 16 ColNo = 5 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 6:16:41 GMT: diagnostics = javax.tools.DiagnosticCollector@70f708d8
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@5e52f6d9
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 6:16:41 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@fe9bcc0' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:16:41 GMT: Compiler call returned
+28 Mar 2025 6:16:41 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@75ced391
+28 Mar 2025 6:16:41 GMT:  Kind = WARNING
+28 Mar 2025 6:16:41 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 14 ColNo = 13 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 6:18:06 GMT: diagnostics = javax.tools.DiagnosticCollector@275dbe2e
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@5d6ebf21
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 6:18:06 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@764fe653' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:18:06 GMT: Compiler call returned
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@3e5c1696
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 1 ColNo = 8 Msg = 'The import java.io.$ cannot be resolved'
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@4d5d36da
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 6 ColNo = 5 Msg = 'FileWriter cannot be resolved to a type'
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@79f57cdc
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 28 ColNo = 14 Msg = 'IOException cannot be resolved to a type'
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@7fcc2288
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 8 ColNo = 21 Msg = 'FileWriter cannot be resolved to a type'
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@217a7341
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 18 ColNo = 12 Msg = 'IOException cannot be resolved to a type'
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@5b56a52
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 32 ColNo = 5 Msg = 'FileReader cannot be resolved to a type'
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@57f4f5a4
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 52 ColNo = 14 Msg = 'IOException cannot be resolved to a type'
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@49b255b0
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 34 ColNo = 20 Msg = 'FileReader cannot be resolved to a type'
+28 Mar 2025 6:18:06 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@3b20c7bc
+28 Mar 2025 6:18:06 GMT:  Kind = ERROR
+28 Mar 2025 6:18:06 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 43 ColNo = 12 Msg = 'IOException cannot be resolved to a type'
+28 Mar 2025 6:18:15 GMT: diagnostics = javax.tools.DiagnosticCollector@76f8bec1
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@26105484
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 6:18:15 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@211d896d' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:18:15 GMT: Compiler call returned
+28 Mar 2025 6:18:15 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@5df9703
+28 Mar 2025 6:18:15 GMT:  Kind = WARNING
+28 Mar 2025 6:18:15 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 14 ColNo = 13 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 6:23:30 GMT: diagnostics = javax.tools.DiagnosticCollector@3e0993f6
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@35ddb43e
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 6:23:30 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@67bf1f4b' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 6:23:30 GMT: Compiler call returned
+28 Mar 2025 6:23:30 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@6f601512
+28 Mar 2025 6:23:30 GMT:  Kind = WARNING
+28 Mar 2025 6:23:30 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 14 ColNo = 13 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'
+28 Mar 2025 7:36:28 GMT: diagnostics = javax.tools.DiagnosticCollector@141d12ab
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@201a7693
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 7:36:28 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@53d847f3' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 7:36:28 GMT: Compiler call returned
+28 Mar 2025 7:36:28 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@4d2b3d85
+28 Mar 2025 7:36:28 GMT:  Kind = ERROR
+28 Mar 2025 7:36:28 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 3 ColNo = 14 Msg = 'The public type CharBuffTest must be defined in its own file'
+28 Mar 2025 7:36:55 GMT: diagnostics = javax.tools.DiagnosticCollector@6440a1da
+fileManager = org.eclipse.jdt.internal.compiler.tool.EclipseFileManager@42ca2782
+fileObjects = [C:\Users\67109010195\Desktop\q8_02_195.java]
+28 Mar 2025 7:36:55 GMT: Calling 'org.eclipse.jdt.internal.compiler.tool.EclipseCompiler@77ef4ced' with options [-Xlint:deprecation, -Xlint:unchecked, -g, -classpath, C:\Users\67109010195\Desktop;C:\Users\Public\Desktop\drjava-beta-20160913-225446.exe]
+28 Mar 2025 7:36:55 GMT: Compiler call returned
+28 Mar 2025 7:36:55 GMT: Processing diagnostic org.eclipse.jdt.internal.compiler.tool.EclipseCompilerImpl$3$2@a3e704f
+28 Mar 2025 7:36:55 GMT:  Kind = WARNING
+28 Mar 2025 7:36:55 GMT: Name = C:\Users\67109010195\Desktop\q8_02_195.java LineNo = 16 ColNo = 6 Msg = 'Resource leak: '<unassigned Closeable value>' is never closed'

@@ -1,0 +1,49 @@
+
+**** 11/21/24 14:08:05 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ic555asg"  [ E:\folkfolkfolk\ic555asg-PSpiceFiles\SCHEMATIC1\ic555asg.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ic555asg.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\PC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ns 0 100ms 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source IC555ASG
+R_R2         N00838 N00782  5.6k  
+C_C2         0 N03334  0.01u   
+R_R3         N00970 N00838  6.8k  
+C_C1         0 N00970  0.01u   
+X_U1         0 N00970 N03647 N00782 N03334 N00970 N00838 N00782 555B
+V_V1         N00782 0 9Vdc
+R_R4         N03647 0  1k TC=0,0 
+
+**** RESUMING ic555asg.cir ****
+.END
+
+ERROR -- Circuit Too Large!
+EVALUATION VERSION Limit Exceeded for "Q" Devices!
+
+
+

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Q04_442_01 {
+  public static void main(String[] args) { 
+    double Area1 = calArea(2,3,4),Area2 = calArea(5,6),Area3 = calArea(1);
+    System.out.print("Area1 is "+Area1+"\nArea2 is "+Area2+"\nArea3 is "+Area3); 
+  }
+  public static double calArea(double i,double j,double k)
+  {
+    double area;
+    area = ((i + j)/2)+k;
+    return area;
+  }
+  public static double calArea(double i,double j)
+  {
+    double area;
+    area = (i*j)/2;
+    return area;
+  }
+  public static double calArea(double i)
+  {
+    double area,h;
+    h = i*i;
+    area = 3.14*h;
+    return area;
+  }
+}

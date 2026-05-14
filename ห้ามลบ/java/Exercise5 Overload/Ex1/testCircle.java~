@@ -1,0 +1,13 @@
+public class testCircle
+{
+  public static void main(String[] args)
+  {
+    double r1=4
+    System.out.println("First Circle (C1)");
+    System.out.println("---------");
+    Circle(r);
+    System.out.println("Circle's Area is :"+Circle.getArea(););
+    System.out.println("Circle's Volume is :"+Circle.getVolume(););
+    System.out.println("Circle's Circumference is :"+Circle.getCurcumference();)
+  }
+}

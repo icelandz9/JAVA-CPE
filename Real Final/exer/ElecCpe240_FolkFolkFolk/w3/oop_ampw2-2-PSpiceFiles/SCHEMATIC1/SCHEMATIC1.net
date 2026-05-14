@@ -1,0 +1,8 @@
+* source OOP_AMPW2-2
+V_V1         0 N00802 15Vdc
+V_V2         N00962 0  
++SIN 0V 0.5V 1k 0 0 0
+R_R2         N00782 N00792  10k  
+R_R1         0 N00782  20k  
+X_U1         N00962 N00782 N00978 N00802 N00792 uA741
+V_V3         N00978 0 15Vdc

@@ -1,0 +1,60 @@
+public class Triangle
+{
+  private static double length = 5; 
+  private double side1;
+  private double side2;
+  private double side3;
+  public Triangle()
+  {
+    side1=2;//base
+    side2=2;
+    side3=2;
+  }
+  public Triangle(double s1)
+  {
+    this.s1=s1;
+    this.s2=2;
+    this.s3=2;
+  }
+  public Triangle(double s1,double s2)
+  {
+    this.s1=s1;
+    this.s2=s2;
+    this.s3=2;
+  }
+  public Triangle(double s1,double s2,double s3)
+  {
+    this.s1=s1;
+    this.s2=s2;
+    this.s3=s3;
+  }
+  public double getTrianglePerimeter()
+  {
+    return s1+s2+s3;
+  }
+  public double getTriangleVolume()
+  {
+    double s=(s1+s2+s3)/2.0;
+    return (Math.sqrt(s*(s-s1)*(s-s2)*(s-s3)))*length;
+  }
+   public double getTriangleSurfaceArea()
+  {
+    return s1+s2+s3;
+  }
+  public double getTriangleArea()
+  {
+    double s=(s1+s2+s3)/2.0;
+    return Math.sqrt(s*(s-s1)*(s-s2)*(s-s3));
+    //return Math.sqrt(3)/4*Math.pow(s1,2);
+  }
+  public void printTriangel()
+  {
+    System.out.println("All perameter of This Triangel");
+    System.out.print("Triangel Area = "+getTriangelArea()+" cm2\t");
+    System.out.println("Triangel Surface Area = "+getTriangelSurfaceArea()+" cm2");
+    System.out.print("Triangel Volume = "+getTriangelVolume()+" cm3\t");
+    System.out.println("Triangel Perimeter = "+getTriangelPerimeter()+" cm");
+  }
+ 
+  
+}

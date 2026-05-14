@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Ex7
+{
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Select data type of all number int = 1 double = 2 : ");
+    int data = nextInt();
+    switch(data)
+    {
+      case 1:
+        System.out.print("Enter five number : ");
+        int x1=nextInt();
+        int x2=nextInt();
+        int x3=nextInt();
+        int x4=nextInt();
+        int x5=nextInt();
+        int av=calAverage.
+        break;
+      case 2:
+        System.out.print("Enter five number : ");
+        double x1=nextDouble();
+        double x2=nextDouble();
+        double x3=nextDouble();
+        double x4=nextDouble();
+        double x5=nextDouble();
+        
+        break;
+      default:
+        System.out.print("Error");
+        break;
+    }
+    
+    }
+  }

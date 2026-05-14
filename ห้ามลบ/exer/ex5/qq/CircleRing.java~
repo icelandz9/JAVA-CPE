@@ -1,0 +1,41 @@
+public class CircleRing {
+  public static final double Pi = 3.14;
+  private double radius_in;
+  private double radius_out;
+  
+  public class CircleRing(){
+    this.radius_in = 5;
+    this.radius_out = 10;
+  }
+  public class CircleRing(double ri, double ro){
+    this.radius_in = ri;
+    this.radius_out = ro;
+  }
+  public double getCircleAreaIn(){
+    double circleareain = Pi*ri*ri;
+    return circleareain;
+  }
+  public double getCircleAreaOut(){
+    double circleareaout = Pi*ro*ro;
+    return circleareaout;
+  }
+  public double getRadiusIn(){
+    return ri;
+  }
+  public double getRadiusOut(){
+    return ro;
+  }
+  get double getCircleRingArea(){
+    double circlering = getCircleAreaOut()-getCircleAreaIn();
+    return circlering;
+  }
+  public void printCircleRing(){
+    System.out.println("All parameter of this Circle Ring");
+    System.out.println("Radius In =" +getRadiusIn()+"cm", "RadiusOut =" +RadiusOut()+ "cm");
+    System.out.println("Circle Area Inside = "+getCircleAreaIn()+" cm2 and Circle Area Outside = "+getCircleAreaOut()+ " cm2");
+    System.out.println("Ciecle Ring Area =" +getCircleRingArea()+ " cm2");
+   }
+  
+  
+    
+  

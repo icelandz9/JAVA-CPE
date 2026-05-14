@@ -1,0 +1,59 @@
+import java.io.*;
+import java. fnameutil.Scanner;
+public class Test72{
+  public static void main(String[] args){
+    String fname = "d:\\CharBuffData.txt";FileOutputSteamf_out = null;
+    try{
+      f_out = new FileOutputStream(fname);
+      int c;
+      System.out.println("Read from KB");
+      System.out.println("---------------------------");
+      do{
+        System.out.print("Enter Data : ");
+        c = new Scanner(System.in).nextInt();
+        if (c!=$)f_out.write(c);
+      }while (c!=$);
+    }
+    catch(IOException e){
+      System.out.print(e);
+    }
+    finally{
+      try{
+        if(f_out != null)
+          f_out.close();
+          System.out.println("Read Data from File : "+fname);
+          System.out.println("---------------------------------");
+        }
+        catch (IOException e){
+          System.out.println(e);
+        }
+      }
+      FileInputStream f_in = null;
+      try{
+        f_in = new FileInputStream(fname);
+        System.out.println("Read Data from File : "+fname);
+        System.out.println("-----------------------------");
+        while((c=f_in.read()) !=-1){
+          System.out.printf("%-3d",c);
+          System.out.println();}
+        catch(IOException e){
+          System.out.println(e);
+        }
+        finlly {
+          try{
+            if(f_in != null)
+              f_in.close();
+              System.out.println("----------------------------");
+            }
+            catch (IOException e){
+              System.out.println(e);
+            }
+          }
+        }
+      }
+}
+          
+           
+            
+        
+        

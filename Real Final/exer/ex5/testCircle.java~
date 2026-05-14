@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class testCircle {
+  public static void main(string[] args){
+    Scanner input = new.Scanner(System.in);
+    System.out.print("Enter the radius: ");
+    double r1 = input.nextDouble();
+    Circle C1 = new Circle(r1);
+    System.out.print("Circle's Aarea: " + C1.getArea());
+    System.out.print("Circle's Volume: " + C1.getVolume());
+    System.out.print("Circle's Circumference: " + C1.getCircumference);
+  }
+}

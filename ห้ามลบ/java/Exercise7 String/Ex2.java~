@@ -1,0 +1,14 @@
+import java.lang.String;
+import java.util.Scanner;
+public class Ex2
+{
+  public static void main(String[] args)
+  {
+    Scanner input= new Scanner(System.in);
+    System.out.println("Enter your message :");
+    String str1 = input.nextLine();
+    String str2 = str1.substring(0,1);
+    String str3 = str1+str2;
+    System.out.println("Your message is :"+str3);
+  }
+}

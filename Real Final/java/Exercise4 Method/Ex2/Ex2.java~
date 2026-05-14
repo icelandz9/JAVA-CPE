@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Ex2
+{
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    calArea Area1 = new calArea();
+    System.out.print("Enter quantity of line :");
+    int n = input.nextInt();
+    System.out.print("Enter lengh of line :");
+    double side = input.nextInt();
+    double op = Area1.area(n,side);
+    System.out.println("Area is :"+op);
+    input.close();
+  }
+}

@@ -1,0 +1,132 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+public class cpe222_442_05 extends JFrame {
+  JButton jbtUp = new JButton("Up");
+  JButton jbtDown = new JButton("Down");
+  JButton jbtLeft = new JButton("<<");
+  JButton jbtRight = new JButton(">>");
+  
+  square sq = new square();
+  
+  public cpe222_442_05(){
+    //ใส่สี่เหลี่ยมไว้เซ็นเตอร์
+    JPanel p1 = new JPanel();
+    p1.setLayout(new BorderLayout());
+    p1.add(sq ,BorderLayout.CENTER);
+    
+    //ใส่ปุ่มไว้ทิศใต้
+    JPanel p2 = new JPanel();
+    p2.setLayout(new FlowLayout());
+    p2.add(jbtUp);
+    p2.add(jbtDown);
+    p2.add(jbtLeft);
+    p2.add(jbtRight);
+    p1.add(p2 ,BorderLayout.SOUTH);
+    
+    add(p1);
+    
+    //แอคชั่นปุ่น
+    jbtUp.addActionListener(new ActionListener(){
+      public void actionPerformed(ActionEvent e){
+        sq.requestFocusInWindow();
+        sq.up();
+        repaint();
+      }
+    });
+    jbtDown.addActionListener(new ActionListener(){
+      public void actionPerformed(ActionEvent e){
+        sq.requestFocusInWindow();
+        sq.down();
+        repaint();
+      }
+    });
+    jbtLeft.addActionListener(new ActionListener(){
+      public void actionPerformed(ActionEvent e){
+        sq.requestFocusInWindow();
+        sq.left();
+        repaint();
+      }
+    });
+    jbtRight.addActionListener(new ActionListener(){
+      public void actionPerformed(ActionEvent e){
+        sq.requestFocusInWindow();
+        sq.right();
+        repaint();
+      }
+    });
+    
+    //แอคชั่นแป้นพิมพ์
+    sq.setFocusable(true);
+    sq.addKeyListener(new KeyAdapter()
+     {
+     public void keyPressed(KeyEvent e)
+      {
+       switch(e.getKeyCode())
+        {
+          case KeyEvent.VK_UP:sq.up();
+          repaint();
+          break;
+          case KeyEvent.VK_DOWN:sq.down();
+          repaint();
+          break;
+          case KeyEvent.VK_LEFT:sq.left();
+          repaint();
+          break;
+          case KeyEvent.VK_RIGHT:sq.right();
+          repaint();
+          break;
+        }
+       }
+      });
+  }
+  
+  //วาดสี่เหลี่ยม
+  class square extends JPanel{
+    
+    //ไว้เลื่อน
+    private int x;
+    private int y;
+    
+    public void up(){
+      y--;
+      repaint();
+    }
+    public void down(){
+      y++;
+      repaint();
+    }
+    public void left(){
+      x--;
+      repaint();
+    }
+    public void right(){
+      x++;
+      repaint();
+    }
+    
+    //วาดสี่เหลี่ยม
+    protected void paintComponent(Graphics g){
+     super.paintComponent(g);
+     g.setColor(Color.WHITE);
+     g.fillRect((getWidth()/8)*2 +x,(getHeight()/8)*2 +y, (getWidth()/8)*3, (getHeight()/8)*3);
+     g.setColor(Color.WHITE);
+     g.fillRect((getWidth()/8)*3 +x,(getHeight()/8)*3 +y, (getWidth()/8)*3, (getHeight()/8)*3);
+     
+     g.setColor(Color.BLACK);
+     g.drawRect((getWidth()/8)*2 +x,(getHeight()/8)*2 +y, (getWidth()/8)*3, (getHeight()/8)*3);
+     g.setColor(Color.BLACK);
+     g.drawRect((getWidth()/8)*3 +x,(getHeight()/8)*3 +y, (getWidth()/8)*3, (getHeight()/8)*3);
+    }
+  }
+  
+  //main
+  public static void main(String[] args){
+    JFrame frame = new cpe222_442_05();
+    frame.setTitle("ControlSquare");
+    frame.setSize(500,500);
+    frame.setLocationRelativeTo(null);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
+  }
+}

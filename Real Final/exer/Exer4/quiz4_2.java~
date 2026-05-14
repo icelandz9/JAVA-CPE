@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class quiz4_2 {
+  public static void main(String[] args) { 
+  Scanner sn = new Scanner(System.in);
+  double cone,sphere,square;
+  double a,w,l,rad,h,h2,num,sum2,r;
+  System.out.print("Find surface of 1.square 2.sphere 3.cone : ");
+  a = sn.nextDouble();
+ if(a==1)//พท.ผิวสี่เหลี่ยม
+  {
+    System.out.print("Enter width of square:" );
+    w = sn.nextInt();
+    System.out.print("Enter leght of square:" );
+    l = sn.nextInt();
+    System.out.print("Enter high of square:" );
+    h = sn.nextInt();
+    square = calSurface(w,l,h);
+    System.out.println("Area of square is:" +square);
+  }
+ if(a == 2)//พท.ผิวกลม
+  {
+    System.out.print("Enter radius of sphere:");
+    rad = sn.nextDouble();
+    sphere = calSurface(rad);
+    System.out.println("Volume of sphere is:"+sphere);
+  } 
+ if(a == 3)//พท.ผิวทรงกรวย
+  {
+    System.out.print("Enter radius of cone:");
+    rad = sn.nextDouble();
+    System.out.print("Enter heigh of cone:");
+    h = sn.nextDouble();
+    cone = calSurface(rad,h);
+    System.out.println("Volume of cone is:"+cone);
+ }
+  }
+  public static double calSurface(double w,double l,double h)
+  {
+   return(2*l*w)+(2*w*h)+(2*h*l);
+   }
+   
+  public static double calSurface(double rad)
+  {
+   return  4*Math.PI*Math.pow(rad,(2));
+  }
+  
+  public static double calSurface(double rad,double h)
+  { 
+  return Math.sqrt((Math.pow(rad,(2))*Math.pow(h,(2))));
+    
+  }
+}
+
+

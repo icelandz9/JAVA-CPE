@@ -1,0 +1,22 @@
+import java.util.Scanner;
+  public class Ex8V2
+{
+  public static void main(String[] args)
+  {
+    Scanner sn = new Scanner(System.in);
+    System.out.print("Enter a point with two coordinates : ");
+    double x = sn.nextDouble();
+    double y = sn.nextDouble();
+    double a = Math.abs(x);
+    double b = Math.abs(x);
+    if(a <= (10.0/2.0) && b <= (5.0/2.0) )
+    {
+      System.out.println("Point("+x+","+y+") is in the rectangle");
+    }
+    else
+    {
+      System.out.println("Point("+x+","+y+") is not in the rectangle");
+    }
+    sn.close();
+  }
+ }

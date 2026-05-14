@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class Ex4_1{
+  public static void main(String[] args){
+    Scanner sn = new Scanner(System.in);
+    double a, b, c;
+    boolean num;
+    System.out.print("Enter 3 numbers : ");
+    a = sn.nextDouble();
+    b = sn.nextDouble();
+    c = sn.nextDouble();
+    num = cal(a, b, c);
+    System.out.println(num);
+    sn.close();
+  }
+  
+  public static boolean cal(double a, double b, double c){
+    boolean show;
+    boolean x = true, y = false;
+     if(((a>b)&&(a>c))&&((c<a)&&(c<b)))
+    {
+      show = y;
+    }
+    else if(((a>b)&&(a>c))||((c<a)&&(c<b)))
+    {
+      show = x;
+    }
+    else
+    {
+      show = y;
+    }
+    return show;
+  }
+}

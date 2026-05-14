@@ -1,0 +1,17 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Ex4
+{ 
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter Weight (kg.) : ");
+    double w = input.nextDouble();
+    System.out.print("Enter Height (cm.) : ");
+    double h = input.nextDouble();
+    //end input
+    double hm = h/100;
+    double bmi = w/(Math.pow(hm,2));
+    System.out.println("BMI is :" + bmi);
+  }
+}  

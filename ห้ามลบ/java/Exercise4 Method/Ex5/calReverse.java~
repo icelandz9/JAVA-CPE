@@ -1,0 +1,7 @@
+public class calReverse
+{
+  public static int reverse(int number);
+  {
+    
+  }
+}

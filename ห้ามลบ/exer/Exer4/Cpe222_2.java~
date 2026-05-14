@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Cpe222_2{
+  public static void main(String[] args){
+    Scanner in = new Scanner(System.in);
+    System.out.println("Enter n, s :");
+    int n; 
+    double s;
+    n = in.nextInt();
+    s = in.nextDouble();
+    System.out.println("The area is" +area(n, s));
+  }
+  public static double area(int n, double s){
+    return (n*(s*s)/4*Math.tan((Math.PI/n)));
+  }
+}

@@ -1,0 +1,146 @@
+
+**** 10/17/24 14:19:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-oop_amp2"  [ C:\Users\PC\Desktop\oop_amp2-PSpiceFiles\SCHEMATIC1\oop_amp2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "oop_amp2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\PC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 20ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OOP_AMP2
+V_V1         N00420 0  
++SIN 0v 0.1 1k 0 0 0
+V_V2         N00352 0 20Vdc
+Q_Q1         N00683 N00348 N00363 Q2N2222
+R_R1         N00348 N00352  330k  
+R_R2         N00683 N00352  1k  
+R_R3         0 N00363  560  
+R_R4         0 N00386  10k  
+C_C1         0 N00348  220u   
+C_C2         N00386 N00683  10u   
+C_C3         N00363 N00420  10u   
+
+**** RESUMING oop_amp2.cir ****
+.END
+
+**** 10/17/24 14:19:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-oop_amp2"  [ C:\Users\PC\Desktop\oop_amp2-PSpiceFiles\SCHEMATIC1\oop_amp2.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222         
+               NPN             
+       LEVEL    1            
+          IS   14.340000E-15 
+          BF  255.9          
+          NF    1            
+         VAF   74.03         
+         IKF     .2847       
+         ISE   14.340000E-15 
+          NE    1.307        
+          BR    6.092        
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE   22.010000E-12 
+         VJE     .75         
+         MJE     .377        
+         CJC    7.306000E-12 
+         VJC     .75         
+         MJC     .3416       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  411.100000E-12 
+         XTF    3            
+         VTF    1.7          
+         ITF     .6          
+          TR   46.910000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 10/17/24 14:19:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-oop_amp2"  [ C:\Users\PC\Desktop\oop_amp2-PSpiceFiles\SCHEMATIC1\oop_amp2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00348)    5.3655 (N00352)   20.0000 (N00363)    4.6660 (N00386)    0.0000     
+
+(N00420)    0.0000 (N00683)   11.7120 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -8.332E-03
+
+    TOTAL POWER DISSIPATION   1.67E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/17/24 14:19:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-oop_amp2"  [ C:\Users\PC\Desktop\oop_amp2-PSpiceFiles\SCHEMATIC1\oop_amp2.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        3.22
+

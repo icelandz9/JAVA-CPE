@@ -1,0 +1,9 @@
+public class testquiz09
+{
+  public static void main(String[] agrs)
+  {
+    Banana b = new Banana();
+    Orange o = new Orange();
+    Coconut c = new Coconut();
+  }
+}

@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Ex5v2
+{
+   public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in); 
+    int swap=0;
+    int[] x = new int [5];
+    for(int i=0;i<5;i++)
+    {
+      System.out.print("Read a number :");
+      x[i]=input.nextInt();
+    }
+        if(x[0]<x[4])
+    {
+      swap=x[0];
+      x[0]=x[4];
+      x[4]=swap;
+    }
+        if(x[1]<x[2])
+        {
+          swap=x[2];
+          x[2]=x[1];
+          x[1]=swap;
+        }
+        if(x[3]>x[4])
+        {
+          swap=x[4];
+          x[4]=x[3];
+          x[3]=swap;
+        }
+ for(int i=0;i<5;i++)
+    {
+      System.out.print(x[i]+" ");
+    }
+   }
+}
+    

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Random
+  public class Ex4
+{
+  public static void main(String[] args)
+  {
+    Scanner sn = new Scanner(System.in);
+    Random rand = new Random();
+    int num = rand.nextInt(1-7);
+    System.out.print("Guess the roll [1-6] : ");
+    int a = sn.nextInt();
+    if (sn == num)
+    {
+      System.out.print("you guess is correct");
+    }
+    else
+    {
+      System.out.print("you guess is incorrect");
+    }
+    sn.close();
+  }
+}

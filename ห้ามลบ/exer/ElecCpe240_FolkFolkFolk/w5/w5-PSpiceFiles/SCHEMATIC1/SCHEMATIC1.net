@@ -1,0 +1,11 @@
+* source W5
+X_U2         N00402 N00394 +VCC -VCC VOUT uA741
+R_R1         +VCC VB  100k  
+R_R2         VB VA  33k  
+R_R3         VA 0  68k  
+R_R4         N00394 VOUT  100k  
+R_R5         0 N00402  100k  
+R_R6         N00394 VA  47k  
+R_R7         N00402 VB  47k  
+V_V1         +VCC 0 12Vdc
+V_V2         0 -VCC 12Vdc

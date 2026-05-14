@@ -1,0 +1,18 @@
+import java.util.Scanner;
+  public class Ex1
+{
+  public static void main(String[] args)
+  {
+    Scanner sn = new Scanner(System.in);
+    int sum=0,num,i=0,average=0;
+    System.out.print("Enter the integer, the input ends if it is 0 : ");
+    do
+    {
+      num = sn.nextInt();
+      sum += num
+      i++;
+      average = sum/i;
+    }while(num != 0);
+    System.out.print("average : "+average);
+  }
+}

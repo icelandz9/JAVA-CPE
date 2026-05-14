@@ -1,0 +1,83 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class Ex1V2 extends JFrame
+{
+  JTextField nm1 = new JTextField(10);
+  JTextField nm2 = new JTextField(10);
+  JTextField result = new JTextField(10);
+  private KeyboardPanel keyboardPanel = new KeyboardPanel(nm1,nm2,result);
+  public Ex1V2()
+  {
+    add(keyboardPanel);
+    keyboardPanel.setFocusable(true);
+    JButton addbt = new JButton("Add"); 
+    JButton sub = new JButton("Subtract");
+    JButton mul = new JButton("Mulitiply");
+    JButton di = new JButton("Divide");
+    JPanel p = new JPanel();
+    JPanel p1 = new JPanel();
+    JPanel p2 = new JPanel();
+    
+    result.setEditable(false);
+    p.setLayout(new BorderLayout());
+    p1.add(addbt);
+    p1.add(sub);
+    p1.add(mul);
+    p1.add(di);
+    p2.add(new JLabel("Number1: "));
+    p2.add(nm1);
+    p2.add(new JLabel("Number2: "));
+    p2.add(nm2);
+    p2.add(new JLabel("Result: "));
+    p2.add(result);
+    p.add(p1,BorderLayout.SOUTH);
+    p.add(p2,BorderLayout.CENTER);
+    add(p);
+    
+  }
+  public static void main(String[] args)
+  {
+    JFrame frame = new Ex1V2();
+    frame.setSize(800,120);
+    frame.setLocationRelativeTo(null);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
+  }
+ static class KeyboardPanel extends JPanel 
+ {
+  private JTextField nm1;
+  private JTextField nm2;
+  private JTextField result;
+  private double sum;
+  
+  private char keyChar = 'A'; // Default key
+  public KeyboardPanel(JTextField nm1,JTextField nm2,JTextField result) {
+    this.nm1 = nm1;
+    this.nm2 = nm2;
+    this.result = result;
+    double num1 = Double.parseDouble(nm1.getText());
+    double num2 = Double.parseDouble(nm2.getText());
+      addKeyListener(new KeyAdapter() {
+        @Override
+        public void keyPressed(KeyEvent e) {
+          switch (e.getKeyCode()) {
+            case KeyEvent.VK_UP: sum = num1+num2;result.setText(String.valueOf(sum)); break;
+            case KeyEvent.VK_DOWN: sum = num1-num2;result.setText(String.valueOf(sum)); break;
+            case KeyEvent.VK_LEFT: sum = num1*num2;result.setText(String.valueOf(sum)); break;
+            case KeyEvent.VK_RIGHT: sum = num1/num2;result.setText(String.valueOf(sum)); break;
+            default: keyChar = e.getKeyChar();
+          }
+          
+        }
+      });
+      
+  
+  }
+  @Override
+    protected void paintComponent(Graphics g) {
+      super.paintComponent(g);
+}
+  }
+}
+

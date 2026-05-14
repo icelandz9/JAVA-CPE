@@ -1,0 +1,17 @@
+public class Q07_442_01{
+  public static void main(String[] args){
+    SuperHero sh = new SuperHero();
+    Batman bm1 = new Batman("Batman", "I am Rich");
+    Superman sm1 = new Superman();
+    Superman sm2 = new Superman ("Super Man", "I can fly");
+    Spiderman sd1 = new Spiderman();
+    Spiderman sd2 = new Spiderman("Spiderman", 20, "I can shoot spider web");
+    
+    System.out.println(sh);  
+    System.out.println(bm1);
+    System.out.println(sm1); 
+    System.out.println(sm2);
+    System.out.println(sd1);
+    System.out.println(sd2);
+  }
+}

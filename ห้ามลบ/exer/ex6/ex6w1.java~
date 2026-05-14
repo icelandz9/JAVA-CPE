@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class ex6w1{
+  public static void main(String[] args){
+    Scanner sn = new Scanner(System.in);
+    int ran=0, score=0, i, size;
+    System.out.print("Enter the number of array size : ");
+    size = sn.nextInt();
+    int[] num = new int[size];
+    for(i=0;i<size;i++)
+    {
+      ran = (int)(Math.random()*99);
+      num[i] = ran;
+      if(((num[i]%10)==4) || ((num[i]%10)==9))
+      {
+        score++;
+        if((num[i]%7)==0)
+        {
+          score++;
+        }
+      }
+    }
+    System.out.print("Your array : { ");
+    for(i=0;i<size;i++)
+    {
+      System.out.print(num[i]+" ");
+    }
+    System.out.println("}");
+    System.out.println("Your array scores : "+score);
+    sn.close();
+  }
+}

@@ -1,0 +1,17 @@
+.ALIASES
+X_U2            U2(+=N00402 -=N00394 V+=+VCC V-=-VCC OUT=VOUT ) CN @W5.SCHEMATIC1(sch_1):INS153@OPAMP.uA741.Normal(chips)
+R_R1            R1(1=+VCC 2=VB ) CN @W5.SCHEMATIC1(sch_1):INS232@ANALOG_P.r.Normal(chips)
+R_R2            R2(1=VB 2=VA ) CN @W5.SCHEMATIC1(sch_1):INS248@ANALOG_P.r.Normal(chips)
+R_R3            R3(1=VA 2=0 ) CN @W5.SCHEMATIC1(sch_1):INS264@ANALOG_P.r.Normal(chips)
+R_R4            R4(1=N00394 2=VOUT ) CN @W5.SCHEMATIC1(sch_1):INS280@ANALOG_P.r.Normal(chips)
+R_R5            R5(1=0 2=N00402 ) CN @W5.SCHEMATIC1(sch_1):INS296@ANALOG_P.r.Normal(chips)
+R_R6            R6(1=N00394 2=VA ) CN @W5.SCHEMATIC1(sch_1):INS312@ANALOG_P.r.Normal(chips)
+R_R7            R7(1=N00402 2=VB ) CN @W5.SCHEMATIC1(sch_1):INS328@ANALOG_P.r.Normal(chips)
+V_V1            V1(+=+VCC -=0 ) CN @W5.SCHEMATIC1(sch_1):INS939@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=0 -=-VCC ) CN @W5.SCHEMATIC1(sch_1):INS955@SOURCE.VDC.Normal(chips)
+_    _(+VCC=+VCC)
+_    _(-VCC=-VCC)
+_    _(Va=VA)
+_    _(Vb=VB)
+_    _(Vout=VOUT)
+.ENDALIASES

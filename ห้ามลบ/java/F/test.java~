@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class test
+{
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter decimal value (0000-9999) : ");
+    int a = input.nextInt();
+    //end input
+    int b = a%2;
+    int c = b%2;
+    int d = c%2;
+    int e = d%2;
+    
+    System.out.println("The value in centimete is :" + b+c+d+e);
+    input.close();
+  }
+}

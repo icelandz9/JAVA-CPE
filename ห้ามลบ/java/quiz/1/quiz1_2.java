@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class quiz1_2
+{ 
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter num1 : ");
+    double num1 = input.nextDouble();
+    System.out.print("Enter num2 : ");
+    double num2 = input.nextDouble();
+    System.out.print("Enter num3 : ");
+    double num3 = input.nextDouble();
+    System.out.print("Enter num4 : ");
+    double num4 = input.nextDouble();
+    double x = num1+(num2/100);
+    double y = num3+(num4/100);
+    double result = x+y;
+    System.out.println("Sum of : "+x+" + "+y+" is "+result);
+    input.close();
+  }
+} 

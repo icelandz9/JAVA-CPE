@@ -1,0 +1,14 @@
+public class Car extends MotorVehicle{
+  private int doors;
+  
+  public Car(String model, String make, int year, int seat, int door){
+    super(model, make, year,seat);
+    this.doors = door;
+  }
+  public int getDoors(){
+    return doors; 
+  }
+  public String toString(){
+    return super.getMake()+", "+super.getModel()+", "+super.getYear()+", seating: "+super.getSeat()+", "+getDoors()+" doors.";
+  }
+}

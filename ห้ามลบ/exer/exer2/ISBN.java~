@@ -1,0 +1,3 @@
+import java.util.Scanner;
+public class ISBN-10 {
+  public static void main(String[] args) {

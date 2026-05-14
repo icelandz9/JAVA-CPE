@@ -1,0 +1,224 @@
+[1] Program คำนวณหาค่า ปริมาตร (Volume) ทรงกระบอก (Cylinder) 
+// โปรแกรมจะทำการรับค่า รัศมี และความยาว จากผู้ใช้ มาคำนวณหาพื้นที่วงกลม และปริมาตร ทรงกระบอกจากสมการ 
+พื้นที่ฐาน: area = รัศมี x รัศมี x 𝜋
+ปริมาตร: volume=area×ค่าความยาว (length)
+
+#CODE
+
+import java.util.Scanner;
+
+public class CylinderCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // รับค่ารัศมี
+        System.out.print("Enter the radius of the cylinder: ");
+        double radius = scanner.nextDouble();
+
+        // รับค่าความยาว
+        System.out.print("Enter the length of the cylinder: ");
+        double length = scanner.nextDouble();
+
+        // คำนวณพื้นที่ฐาน
+        double area = Math.PI * radius * radius;
+
+        // คำนวณปริมาตร
+        double volume = area * length;
+
+        // แสดงผลลัพธ์
+        System.out.printf("The area of the cylinder is: %.6f\n", area);
+        System.out.printf("The volume of the cylinder is: %.6f\n", volume);
+
+        scanner.close();
+    }
+}
+
+============ อธิบายCODE==================
+ใช้ Scanner เพื่อรับค่าจากผู้ใช้งาน
+คำนวณค่าพื้นที่ฐานด้วย Math.PI (ค่าคงที่ของ π) และสูตรที่กำหนด
+ใช้ System.out.printf เพื่อแสดงผลลัพธ์ในรูปแบบทศนิยม 6 ตำแหน่ง
+
+
+------------------------------------------------------------------------------------------
+[2] // Pจากโจทย์ เขียนโปรแกรม เพื่อรับค่าความยาวในหน่วยนิ้ว และแปลงค่าเป็นหน่วยเซนติเมตร โดยใช้ตัวแปลงที่กำหนดคือ [1นิ้ว=2.54เซนติเมตร] // มันคือค่าจริง
+เข้าใจง่ายๆคือ โปรแกรมทำเพื่อ เปลี่ยนค่าจากนิ้ว เป็น เซนติเมตร
+
+
+import java.util.Scanner;
+
+public class InchesToCentimeters {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // รับค่าความยาวในหน่วยนิ้ว
+        System.out.print("Enter inches as an integer: ");
+        int inches = scanner.nextInt();
+
+        // คำนวณค่าเป็นเซนติเมตร
+        double centimeters = inches * 2.54;
+
+        // แสดงผลลัพธ์
+        System.out.printf("The value in centimeters is: %.10f\n", centimeters);
+
+        scanner.close();
+    }
+}
+
+============ อธิบายCODE==================
+
+ตัวแปร inches: เก็บค่าที่ผู้ใช้กรอกในหน่วยนิ้ว (จำนวนเต็ม)
+ตัวแปร centimeters: เก็บค่าที่คำนวณแล้วในหน่วยเซนติเมตร (ชนิด double เพื่อรองรับทศนิยม)
+การใช้ printf: กำหนดรูปแบบการแสดงผลลัพธ์เพื่อให้ตรงกับโจทย์ (แสดงผลทศนิยม 10 ตำแหน่ง)
+
+-----------------------------------------------------------------------------------------
+[2.1]//eจากโจทย์ เขียนโปรแกรม เพื่อรับค่าตัวเลขในหน่วยนิ้ว เพื่อแปลงมาเป็นเซนติเมตร ผลลัพธ์ที่ได้จะต้องออกมาเหมือนตัวอย่าง [1เซนติเมตร= 0.3937 นิ้ว]
+เข้าใจง่ายๆคือ เหมือนโปรแกรมข้างบนทำเพื่อ เปลี่ยนค่าจากนิ้ว เป็น เซนติเมตร แต่ค่าที่กำหนดเปลี่ยน
+
+ตีโจทย์ใหม่เป็น จากโจทย์ที่ให้มา เราต้องเขียนโปรแกรม Java เพื่อรับค่าความยาวในหน่วยนิ้วและแปลงเป็นเซนติเมตร โดยค่าตัวแปลงที่ให้มาในโจทย์คือ 1 เซนติเมตร = 0.3937 นิ้ว หรือ 1 นิ้ว = 2.54000254000508 เซนติเมตร
+CODE 
+import java.util.Scanner;
+
+public class InchesToCentimeters {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // รับค่าความยาวในหน่วยนิ้วจากผู้ใช้
+        System.out.print("Enter inches as an integer: ");
+        int inches = scanner.nextInt();
+
+        // ใช้ค่าตัวแปลงที่ตรงกับผลลัพธ์ตัวอย่าง
+        double conversionFactor = 2.54000254000508;
+        
+        // คำนวณการแปลงเป็นเซนติเมตร
+        double centimeters = inches * conversionFactor;
+
+        // แสดงผลลัพธ์ โดยกำหนดให้มีทศนิยม 12 ตำแหน่ง
+        System.out.printf("The value in centimeters is %.12f\n", centimeters);
+
+        scanner.close();
+    }
+}
+============ อธิบายCODE==================
+//การอธิบายโค้ด
+รับค่าจากผู้ใช้ ใช้ Scanner เพื่อรับค่าจำนวนเต็มที่ผู้ใช้ป้อน (เป็นนิ้ว)
+//ใช้ค่าตัวแปลงที่แม่นยำ
+ใช้ค่า 2.54000254000508 เป็นตัวแปลง (ตามผลลัพธ์ที่ต้องการ)
+ค่า 1 นิ้ว = 2.54000254000508 เซนติเมตร แทนที่จะใช้ค่า 2.54 ปกติ เพื่อให้ตรงกับตัวอย่าง
+//คำนวณและแสดงผลลัพธ์
+คำนวณโดยใช้สูตร centimeters = inches * conversionFactor;
+ใช้ printf("%.12f") เพื่อแสดงค่าทศนิยม 12 ตำแหน่ง
+
+
+----------------------------------------------
+[3] // CODE คำนวณค่า BMI (ดัชนีมวลกาย)  w// ไม่รู้ออกไหมใส่ไว้ก่อน 
+
+iimport java.util.Scanner;
+
+public class BMICalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // รับน้ำหนักจากผู้ใช้ (กิโลกรัม)
+        System.out.print("Enter weight in kg: ");
+        double weight = scanner.nextDouble();
+
+        // รับส่วนสูงจากผู้ใช้ (เซนติเมตร)
+        System.out.print("Enter height in cm: ");
+        double heightCm = scanner.nextDouble();
+
+        // แปลงส่วนสูงจากเซนติเมตรเป็นเมตร
+        double heightM = heightCm / 100;
+
+        // คำนวณ BMI
+        double bmi = weight / (heightM * heightM);
+
+        // แสดงผลลัพธ์ BMI
+        System.out.printf("BMI is %.2f\n", bmi);
+
+        // ปิด Scanner
+        scanner.close();
+    }
+}
+
+============ อธิบายCODE==================
+ใช้ Scanner เพื่อรับข้อมูลจากผู้ใช้
+รับค่าจากผู้ใช้
+ใช้ System.out.print() แสดงข้อความแจ้งให้ผู้ใช้ป้อนค่า
+ใช้ scanner.nextDouble() อ่านค่าที่ผู้ใช้ป้อนเป็นตัวเลขทศนิยม
+//คำนวณ BMI
+ใช้ System.out.printf("%.2f", bmi); เพื่อแสดงผลลัพธ์แบบมีทศนิยม 2 ตำแหน่ง
+ปิด Scanner
+ใช้ scanner.close(); เพื่อปิด Scanner หลังใช้งานเสร็จ
+------------------------------------------------------------------------------------------
+[4] dโปรแกรมที่รับค่าจำนวนเต็มระหว่าง 000 ถึง 999 แล้วนำตัวเลขในแต่ละหลักมาคูณกัน และแสดงผลลัพธ์ออกมา //ผลลัพที่ต้องการคือ 000and999 : 245 // บรรทัดที่สองต้อง 40
+Code 
+import java.util.Scanner;
+
+public class DigitProduct {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // รับค่าตัวเลขจากผู้ใช้
+        System.out.print("Enter an integer between 000 and 999: ");
+        int num = scanner.nextInt();
+
+        // แยกตัวเลขในแต่ละหลัก
+        int digit1 = num % 10;         // หลักหน่วย
+        int digit2 = (num / 10) % 10;   // หลักสิบ
+        int digit3 = (num / 100) % 10;  // หลักร้อย
+
+        // คำนวณผลคูณของตัวเลขแต่ละหลัก
+        int product = digit1 * digit2 * digit3;
+
+        // แสดงผลลัพธ์
+        System.out.println("The product of digits is " + product);
+
+        scanner.close();
+    }
+}
+
+============ อธิบายCODE==================
+แยกหลักของตัวเลข//
+int digit1 = num % 10; → ได้เลขหลักหน่วย
+int digit2 = (num / 10) % 10; → ได้เลขหลักสิบ
+int digit3 = (num / 100) % 10; → ได้เลขหลักร้อย
+ใช้ % 10 เพื่อดึงค่าหลักสุดท้ายของตัวเลข และใช้ / 10 เพื่อลดขนาดตัวเลขลง
+คำนวนผลคูณของหลักตัวเลข //  int product = digit1 * digit2 * digit3;
+------------------------------------------------------------------------------------------
+[5] sโปรแกรมที่รับค่าจำนวนวินาทีจากผู้ใช้ แล้วแปลงเป็นหน่วยของชั่วโมง นาที และวินาที
++ง่ายๆคือ กรอกวินาทีออกมา แปลงให้เป็น ชั่วโมง นาที วินาที
+CODE
+import java.util.Scanner;
+
+public class TimeConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // รับค่าจำนวนวินาทีจากผู้ใช้
+        System.out.print("Enter the number of seconds: ");
+        int totalSeconds = scanner.nextInt();
+
+        // คำนวณชั่วโมง นาที และวินาที
+        int hours = totalSeconds / 3600;             // 1 ชั่วโมง = 3600 วินาที
+        int remainingSeconds = totalSeconds % 3600;  // วินาทีที่เหลือหลังจากตัดชั่วโมงออกไป
+        int minutes = remainingSeconds / 60;         // 1 นาที = 60 วินาที
+        int seconds = remainingSeconds % 60;         // วินาทีที่เหลือจากการตัดนาทีออกไป
+
+        // แสดงผลลัพธ์
+        System.out.println(totalSeconds + " seconds is " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds.");
+
+        scanner.close();
+    }
+}
+
+============ อธิบายCODE==================
+
+คำนวณชั่วโมง นาที และวินาที
+int hours = totalSeconds / 3600;
+→ ใช้การหาร (/) เพื่อหาจำนวนชั่วโมง (1 ชั่วโมง = 3600 วินาที)
+int remainingSeconds = totalSeconds % 3600;
+→ ใช้ % เพื่อหาจำนวนวินาทีที่เหลือจากการตัดชั่วโมงออก
+int minutes = remainingSeconds / 60;
+→ ใช้ remainingSeconds หารด้วย 60 เพื่อหานาที
+int seconds = remainingSeconds % 60;
+→ ใช้ % เพื่อหาจำนวนวินาทีที่เหลือจากการตัดนาทีออก

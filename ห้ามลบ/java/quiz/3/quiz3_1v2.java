@@ -1,0 +1,27 @@
+import java.util.Random;
+import javax.swing.JOptionPane;
+public class quiz3_1v2
+{
+  public static void main(String[] args)
+  {
+        Random rand = new Random();
+        double x;
+        double sum=0.0;
+        for(int i=0;i<5;i++)
+        {
+          for(int j=0;j<5;j++)
+          {
+          int num = rand.nextInt(2000);
+          int num1 = num-1500;
+          x=num1;
+          System.out.print(x+"\t\t");
+          if(x%2==1)
+          {
+            sum += x;
+          }
+          }
+          System.out.println("");
+        }
+       JOptionPane.showMessageDialog(null,"The sum of all odd in the 5x5 martrix is :"+sum);
+   }
+  }

@@ -1,0 +1,39 @@
+import java.lang.Math;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class zodiac{
+  public static void main(String angs[]){
+    int year,zodyear,leap;
+    Scanner scan = new Scanner(System.in);
+    System.out.printf("Enter a year: ");
+    year= scan.nextInt();
+    zodyear=(year-2008)%12;
+    //ox tiger rabbit dragon snake horse sheep monkey rooster dog pig
+      switch(zodyear){
+        case 0: System.out.printf("%d is a leap year. The Chinese zodiac of %d is Rat.", year, year);
+      break;
+        case 1: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Ox.", year, year);
+      break;
+        case 2: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Tiger.", year, year);
+      break;
+        case 3: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Rabbit.", year, year);
+      break;
+        case 4: System.out.printf("%d is a leap year. The Chinese zodiac of %d is Dragon.", year, year);
+      break;
+        case 5: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Snake.", year, year);
+      break;
+        case 6: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Horse.", year, year);
+      break;
+        case 7: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Sheep.", year, year);
+      break;
+        case 8: System.out.printf("%d is a leap year. The Chinese zodiac of %d is Monkey.", year, year);
+      break;
+        case 9: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Rooster.", year, year);
+      break;
+        case 10: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Dog.", year, year);
+      break;
+        case 11: System.out.printf("%d is not a leap year. The Chinese zodiac of %d is Pig.", year, year);
+      break;
+      }
+  }
+}

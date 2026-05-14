@@ -1,5 +1,3 @@
-package Quiz.Quiz_Graymatter.Final.Final63.Final63_5;
-
 public class Car extends MotorVehicle {
     private int doors;
 
