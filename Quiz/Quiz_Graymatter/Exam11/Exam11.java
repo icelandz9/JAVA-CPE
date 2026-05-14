@@ -1,4 +1,3 @@
-package Quiz.Quiz_Graymatter.Exam11;
 
 import java.awt.*;
 import javax.swing.*;

@@ -34,7 +34,7 @@ public class Ex1B extends JFrame {
         okButton.addActionListener( // บอกไปที่ okButton ว่าจะเกิด event
                 new ActionListener() { // สร้าง object กำหนด event
                     public void actionPerformed(ActionEvent e) { // สร้าง public มาไว้สำหรับทำงาน object
-                        System.out.println("OK button click"); // สิ่งที่ จะเกิดเมื่อ ทำงานแล้ว
+                        System.out.println("\nOK button click"); // สิ่งที่ จะเกิดเมื่อ ทำงานแล้ว
                         System.out.print(nameField.getText()); // เมื่อใส่ข้อความแล้วจะเกิดขึ้น
                     }
                 });

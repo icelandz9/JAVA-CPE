@@ -2,34 +2,49 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Ex1C extends JFrame {  // ✅ เพิ่ม extends JFrame
+public class Ex1C extends JFrame {
 
-    public Ex1C() {                 // ✅ เพิ่ม constructor
-        setTitle("หมากฮอส");
-        setSize(400, 400);
+    public Ex1C() {
+        setTitle("Exercise 7");
+        setSize(400, 250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JPanel board = new JPanel(new GridLayout(8, 8));
+        // สร้าง JPanel สำหรับเก็บข้อความแต่ละบรรทัด
+        JPanel panel = new JPanel();
+        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS)); // ใช้ BoxLayout เพื่อจัดข้อความในแนวตั้ง
 
-        for (int row = 0; row < 8; row++) {
-            for (int col = 0; col < 8; col++) {
-                JPanel cell = new JPanel();
+        // ข้อความที่ต้องการแสดง
+        String[] data = {
+                "Hello, My name is CPE 120",
+                "Department of Computer Engineering",
+                "Srinakharinwirot University",
+                "Ongkarak Nakhornnayok"
+        };
 
-                if ((row + col) % 2 == 0) {
-                    cell.setBackground(Color.WHITE);
-                } else {
-                    cell.setBackground(Color.BLACK);
-                }
+        // สร้าง JPanel และ JLabel สำหรับแต่ละบรรทัด
+        for (String text : data) {
+            JPanel labelPanel = new JPanel(); // สร้าง JPanel สำหรับกรอบสีน้ำเงิน
+            labelPanel.setPreferredSize(new Dimension(350, 50)); // กำหนดขนาดตายตัวให้กรอบ
+            labelPanel.setBorder(BorderFactory.createLineBorder(Color.BLUE, 2)); // กรอบสีน้ำเงิน
+            labelPanel.setLayout(new BorderLayout()); // จัดการให้ข้อความอยู่กลางกรอบ
 
-                board.add(cell);
-            }
+            // จัดกึ่งกลางของ text
+            // JLabel label = new JLabel(text, JLabel.CENTER); // สร้าง JLabel และแสดงข้อความ
+            // labelPanel.add(label, BorderLayout.CENTER); // เพิ่ม JLabel ลงใน JPanel
+
+            JLabel label = new JLabel(text, JLabel.LEFT); // ข้อความชิดซ้าย
+            labelPanel.add(label, BorderLayout.WEST); //เพิ่ม JLabel ที่ชิดซ้ายลงใน JPanel
+
+            panel.add(labelPanel);
         }
 
-        add(board);
+        JScrollPane scrollPane = new JScrollPane(panel); //ทำให้ เลื่อน scroll ได้ เมื่อข้อความยาวเกินจะเลื่อนได้
+        add(scrollPane); // เพิ่ม scrollPane เข้า JFrame เพื่อแสดงผล
+
         setVisible(true);
-    }                                // ✅ ปิด constructor
+    }
 
     public static void main(String[] args) {
-        new Ex1C();                 // ✅ แก้ชื่อให้ตรงกับ class
+        new Ex1C();
     }
 }
