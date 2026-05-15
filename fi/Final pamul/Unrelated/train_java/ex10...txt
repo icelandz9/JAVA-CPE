@@ -1,0 +1,83 @@
+import javax.swing.*;
+import java.awt.*;
+import javax.swing.border.*;
+import java.awt.event.*;
+
+public class ex_10_1 {
+  public static void main(String[] args) {
+    JFrame fm = new JFrame("Exercise10_01");
+    JPanel pn = new JPanel(new GridLayout(2, 1, 2, 2));
+    fm.add(pn);
+
+    JPanel p1 = new JPanel(new GridLayout(3,2));
+    p1.add(new JLabel("Number1"));
+    JTextField t1 = new JTextField(5);
+    p1.add(t1);
+
+    p1.add(new JLabel("Number2"));
+    JTextField t2 = new JTextField(5);
+    p1.add(t2);
+
+    p1.add(new JLabel("Result"));
+    JLabel re = new JLabel("");
+    p1.add(re);
+    pn.add(p1);
+    re.setBorder(new TitledBorder(""));
+    re.setPreferredSize(new Dimension(100, 20));
+
+    JPanel p2 = new JPanel(new GridLayout(1,4));
+    JButton b1 = new JButton("Add");
+    p2.add(b1);
+
+    JButton b2 = new JButton("Subtract");
+    p2.add(b2);
+
+    JButton b3 = new JButton("Multiply");
+    p2.add(b3);
+
+    JButton b4 = new JButton("Devide");
+    p2.add(b4);
+    pn.add(p2);
+
+    b1.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        double result = 0;
+        result = Double.parseDouble(t1.getText()) + Double.parseDouble(t2.getText());
+        re.setText("" + result);
+      }
+    });
+
+    b2.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        double result = 0;
+        result = Double.parseDouble(t1.getText()) - Double.parseDouble(t2.getText());
+        re.setText("" + result);
+      }
+    });
+
+    b3.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        double result = 0;
+        result = Double.parseDouble(t1.getText()) * Double.parseDouble(t2.getText());
+        re.setText("" + result);
+      }
+    });
+
+    b4.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        double result = 0;
+        result = Double.parseDouble(t1.getText()) / Double.parseDouble(t2.getText());
+        re.setText("" + result);
+      }
+    });
+
+    fm.setSize(450, 120);
+    fm.setLocationRelativeTo(null);
+    fm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    fm.setVisible(true);
+  }
+}

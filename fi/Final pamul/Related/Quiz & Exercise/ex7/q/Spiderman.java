@@ -1,0 +1,18 @@
+public class Spiderman extends SuperHero{
+  private int age;
+  private String power;
+  
+  public Spiderman(){
+    super("Super Hero");
+    this.age = 20;
+    this.power = "I am Student";
+  }
+  public Spiderman(String n, int age, String power){
+    super(n);
+    this.age = age;
+    this.power = power;
+  }
+  public String toString(){
+    return super.toString()+". I am "+this.age+" years old. "+this.power+".";
+  }
+}

@@ -1,0 +1,73 @@
+import javax.swing.*;
+import java.awt.*;
+public class quiz10 extends JFrame
+{
+  public quiz10()
+  {
+    JPanel p = new JPanel();//main
+    JPanel p1 = new JPanel();
+    JPanel p2 = new JPanel();
+    JPanel p3 = new JPanel();
+    JPanel p4 = new JPanel();
+    JPanel p5 = new JPanel();
+    JPanel p6 = new JPanel();
+    p.setLayout(new BorderLayout(5,10));
+    
+    
+
+    
+    
+    
+    JTextField nm1 = new JTextField(10);   
+    JTextField nm2 = new JTextField(10);
+    JTextField result = new JTextField(10);
+    p1.add(new JLabel("Number1: "));  p1.add(nm1);
+    p1.add(new JLabel("Number2: "));  p1.add(nm2);
+    p1.add(new JLabel("Result: "));  p1.add(result);
+    p1.setLayout(new GridLayout(1,6));
+    p.add(p1,BorderLayout.NORTH);
+    
+    
+    
+    JButton a = new JButton("1");    JButton b = new JButton("2");    JButton c = new JButton("3");
+    JButton d = new JButton("4");    JButton e = new JButton("5");    JButton f = new JButton("6");
+    JButton g = new JButton("7");    JButton h = new JButton("8");    JButton i = new JButton("9");
+    JButton j = new JButton("*");    JButton k = new JButton("0");    JButton l = new JButton("#");
+    
+    p2.setLayout(new GridLayout(4,3));
+    p2.add(a);  p2.add(b);  p2.add(c);
+    p2.add(d);  p2.add(e);  p2.add(f);
+    p2.add(g);  p2.add(h);  p2.add(i);
+    p2.add(j);  p2.add(k);  p2.add(l);
+    
+    p4.setLayout(new GridLayout(1,1));
+    JButton m = new JButton("=");
+    p4.add(m);
+    
+    JButton n = new JButton("+");  JButton o = new JButton("-");
+    JButton p0= new JButton("x");  JButton q = new JButton("/");          
+    JButton r = new JButton(".");  JButton s = new JButton("%");
+
+    
+    p3.setLayout(new GridLayout(3,2));
+    p3.add(n);  p3.add(o);
+    p3.add(p0); p3.add(q);
+    p3.add(r);  p3.add(s);
+    p5.add(p3);
+    p6.setLayout(new GridLayout(1,1));
+    p6.add(p5);  p6.add(p4);
+    p.add(p1,BorderLayout.NORTH);
+    p.add(p2,BorderLayout.CENTER);
+    p.add(p6,BorderLayout.SOUTH);
+    add(p);
+  }
+  public static void main(String[] args)
+  {
+    JFrame frame = new quiz10();
+    frame.setTitle("Handle Event");
+    frame.setSize(800,400);
+    frame.setLocationRelativeTo(null);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
+  }
+}

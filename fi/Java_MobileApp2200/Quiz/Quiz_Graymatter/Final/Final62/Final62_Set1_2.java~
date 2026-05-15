@@ -1,0 +1,59 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Final62_Set1_2 extends JFrame {
+    public Final62_Set1_2() {
+        setLayout(new BorderLayout());
+        
+        // ===== TOP =====
+        JLabel titleLabel = new JLabel("*** กรุณาใส่ข้อมูลเข้าสู่ระบบ ***", JLabel.CENTER);
+        titleLabel.setForeground(Color.RED);
+        
+        JPanel TopLabel = new JPanel(new GridLayout(2, 1));
+        TopLabel.add(new JTextField(20));
+        TopLabel.add(titleLabel);
+        add(TopLabel ,BorderLayout.NORTH);
+
+        // ===== CENTER =====
+        JPanel centerPanel = new JPanel(new GridLayout(2, 2));
+        centerPanel.add(new JLabel("Username"));
+        centerPanel.add(new JTextField(10));
+        centerPanel.add(new JLabel("Password"));
+        centerPanel.add(new JPasswordField(10));
+
+        // ===== BUTTON (Log in / Cancel) =====
+        JPanel buttonPanel = new JPanel(new FlowLayout());
+        buttonPanel.add(new JButton("Log in"));
+        buttonPanel.add(new JButton("Cancel"));
+
+        // ===== กลุ่มบนขวา (Center ทั้งชุด) =====
+        JPanel inputPanel = new JPanel(new GridLayout(2,1));
+        inputPanel.add(centerPanel);
+        inputPanel.add(buttonPanel);
+
+        add(inputPanel, BorderLayout.CENTER);
+
+        // ===== ปุ่มตัวเลขล่าง (Keypad) =====
+        JPanel keypadPanel = new JPanel(new GridLayout(4, 3));
+        String[] buttons = {
+            "1", "2", "3",
+            "4", "5", "6", 
+            "7", "8", "9", 
+            "0", ".", "EXP",
+        };
+        for (String text : buttons) {
+            keypadPanel.add(new JButton(text));
+        }
+
+        add(keypadPanel, BorderLayout.SOUTH);
+    }
+
+    public static void main(String[] args) {
+        Final62_Set1_2 frame = new Final62_Set1_2();
+        frame.setTitle("CPE 222 : Frame Layout");
+        frame.setSize(400, 300);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}

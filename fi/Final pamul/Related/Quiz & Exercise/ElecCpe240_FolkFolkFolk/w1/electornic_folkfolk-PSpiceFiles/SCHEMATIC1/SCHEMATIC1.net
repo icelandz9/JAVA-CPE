@@ -1,0 +1,6 @@
+* source ELECTORNIC_FOLKFOLK
+R_R1         N00172 N00167  2k  
+R_R2         N00172 N00176  3k  
+R_R3         N00190 0  5k  
+V_V1         N00167 N00190 10Vdc
+V_V2         N00176 0 4Vdc

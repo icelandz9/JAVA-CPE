@@ -1,0 +1,6 @@
+import java.util.Scanner;
+public class Cpe222_8{
+  public static void main(String[] args){
+    
+  }
+}

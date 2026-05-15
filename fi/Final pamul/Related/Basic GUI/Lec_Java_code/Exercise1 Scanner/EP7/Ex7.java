@@ -1,0 +1,11 @@
+import javax.swing.JOptionPane;
+public class Ex7
+{ 
+  public static void main(String[] args)
+  {
+    String p = JOptionPane.showInputDialog(null,"Enter a Nummber  in pound");
+    double k = Double.parseDouble(p);
+    double k1 = k*0.454;
+    JOptionPane.showMessageDialog(null, "It is " +k1+ " kilograms","error", JOptionPane.ERROR_MESSAGE);
+  }
+}  

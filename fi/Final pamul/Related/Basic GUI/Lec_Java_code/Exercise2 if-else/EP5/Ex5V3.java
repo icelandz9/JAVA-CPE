@@ -1,0 +1,70 @@
+import javax.swing.JOptionPane;
+import java.util.Random;
+  public class Ex5V3
+{
+  public static void main(String[] args)
+  {
+    String x = JOptionPane.showInputDialog(null,"scissor(0) , rock (1) , paper (2)");
+    Random rand = new Random();
+    int num = rand.nextInt(3);
+    int a = Integer.parseInt(x);
+    switch (num)
+    {
+      case 0: 
+        switch (a)
+      {
+        case 0:
+          JOptionPane.showMessageDialog(null,"Computer is scissor, You are scissor too "+" It's Draw","NOT BAD!!",JOptionPane.INFORMATION_MESSAGE);
+          break;
+        case 1:
+         JOptionPane.showMessageDialog(null,"Computer is Scissor, You are rock "+" You Win","YES!!",JOptionPane.INFORMATION_MESSAGE);
+         break;
+        case 2:
+          JOptionPane.showMessageDialog(null,"Computer is Scissor, You are paper "+" You Lost","NO!!",JOptionPane.ERROR_MESSAGE);
+          break;
+        default:
+          JOptionPane.showMessageDialog(null,"Error","Error", JOptionPane.ERROR_MESSAGE);
+          break;
+      }
+        break;
+      case 1 :
+       switch (a)
+      {
+        case 0:
+          JOptionPane.showMessageDialog(null,"Computer is rock, You are scissor "+" You Lost","NO!!",JOptionPane.ERROR_MESSAGE);
+          break;
+        case 1:
+          JOptionPane.showMessageDialog(null,"Computer is rock, You are rock too"+" It's Draw","NOT BAD!!",JOptionPane.INFORMATION_MESSAGE);
+          break;
+        case 2:
+          JOptionPane.showMessageDialog(null,"Computer is rock, You are paper"+" You Win","YES!!",JOptionPane.INFORMATION_MESSAGE);
+          break;
+        default:
+          JOptionPane.showMessageDialog(null,"Error","Error", JOptionPane.ERROR_MESSAGE);
+          break;
+      }
+        break;
+      case 2 :
+        switch (a)
+      {
+        case 0:
+         JOptionPane.showMessageDialog(null,"Computer is paper , You are scissor "+" You Win","YES!!",JOptionPane.INFORMATION_MESSAGE);
+         break;
+        case 1:
+          JOptionPane.showMessageDialog(null,"Computer is paper , You are rock "+" You Lost","NO!!",JOptionPane.ERROR_MESSAGE);
+          break;
+        case 2:
+          JOptionPane.showMessageDialog(null,"Computer is paper , You are paper too "+" It's Draw","NOT BAD!!",JOptionPane.INFORMATION_MESSAGE);
+          break;
+        default:
+          JOptionPane.showMessageDialog(null,"Error","Error", JOptionPane.ERROR_MESSAGE);
+          break;
+      }
+        break;
+      default :
+        JOptionPane.showMessageDialog(null,"Error","Error", JOptionPane.ERROR_MESSAGE);
+        break;
+    }
+
+  }
+}

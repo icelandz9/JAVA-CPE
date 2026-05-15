@@ -1,0 +1,115 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Final62_Set1_4 extends JFrame {
+    private SquarePanel canvas = new SquarePanel();
+
+    public Final62_Set1_4() {
+        setTitle("ControlSquare");
+        setLayout(new BorderLayout());
+
+        // ปุ่มควบคุม
+        JPanel panel = new JPanel();
+        JButton btnLeft = new JButton("Left");
+        JButton btnRight = new JButton("Right");
+        JButton btnUp = new JButton("Up");
+        JButton btnDown = new JButton("Down");
+
+        panel.add(btnDown);
+        panel.add(btnUp);
+        panel.add(btnLeft);
+        panel.add(btnRight);
+
+        // ปุ่ม -> การเคลื่อนที่
+        btnLeft.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                canvas.move(-10, 0);
+            }
+        });
+        btnRight.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                canvas.move(10, 0);
+            }
+        });
+        btnUp.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                canvas.move(0, -10);
+            }
+        });
+        btnDown.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                canvas.move(0, 10);
+            }
+        });
+
+        add(canvas, BorderLayout.CENTER);
+        add(panel, BorderLayout.SOUTH);
+
+        // Keyboard control
+        canvas.setFocusable(true);
+        canvas.requestFocusInWindow();
+        canvas.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                switch (e.getKeyCode()) {
+                    case KeyEvent.VK_LEFT: canvas.move(-10, 0); break;
+                    case KeyEvent.VK_RIGHT: canvas.move(10, 0); break;
+                    case KeyEvent.VK_UP: canvas.move(0, -10); break;
+                    case KeyEvent.VK_DOWN: canvas.move(0, 10); break;
+                }
+            }
+        });
+
+        setSize(500, 500);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    // ==== Canvas Panel ====
+    class SquarePanel extends JPanel {
+        private int x = 200, y = 200;
+        private int size = 80;
+
+        public void move(int dx, int dy) {
+            x += dx;
+            y += dy;
+            repaint();
+        }
+
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+
+            // วาด grid แบบภาพโจทย์
+            drawGrid(g);
+
+            // วาดสี่เหลี่ยม
+            g.setColor(Color.YELLOW);
+            g.fillRect(x, y, size, size);
+
+            g.setColor(Color.GREEN);
+            g.fillRect(x + size + 10, y - size / 2, size, size);
+
+            // วาดวงกลม
+            g.setColor(Color.WHITE);
+            g.fillOval(x + size / 2, y, size, size);
+            g.setColor(Color.BLACK);
+            g.drawOval(x + size / 2, y, size, size);
+        }
+
+        private void drawGrid(Graphics g) {
+            int w = getWidth(), h = getHeight();
+            g.setColor(Color.RED);
+            for (int i = 0; i <= w; i += 50) g.drawLine(i, 0, i, h);
+            for (int j = 0; j <= h; j += 50) g.drawLine(0, j, w, j);
+
+            g.setColor(Color.BLUE);
+            g.drawLine(w / 2, 0, w / 2, h);
+            g.drawLine(0, h / 2, w, h / 2);
+        }
+    }
+
+    public static void main(String[] args) {
+        new Final62_Set1_4();
+    }
+}

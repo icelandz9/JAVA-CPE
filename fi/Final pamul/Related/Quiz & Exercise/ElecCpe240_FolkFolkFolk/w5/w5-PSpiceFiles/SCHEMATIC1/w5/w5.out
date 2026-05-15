@@ -1,0 +1,170 @@
+
+**** 11/07/24 14:52:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-w5"  [ C:\Users\PC\Desktop\ElecCpe240_FolkFolkFolk\w5\w5-PSpiceFiles\SCHEMATIC1\w5.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "w5.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\PC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 10ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source W5
+X_U2         N00402 N00394 +VCC -VCC VOUT uA741
+R_R1         +VCC VB  100k  
+R_R2         VB VA  33k  
+R_R3         VA 0  68k  
+R_R4         N00394 VOUT  100k  
+R_R5         0 N00402  100k  
+R_R6         N00394 VA  47k  
+R_R7         N00402 VB  47k  
+V_V1         +VCC 0 12Vdc
+V_V2         0 -VCC 12Vdc
+
+**** RESUMING w5.cir ****
+.END
+
+**** 11/07/24 14:52:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-w5"  [ C:\Users\PC\Desktop\ElecCpe240_FolkFolkFolk\w5\w5-PSpiceFiles\SCHEMATIC1\w5.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.dx         X_U2.dy         
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 11/07/24 14:52:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-w5"  [ C:\Users\PC\Desktop\ElecCpe240_FolkFolkFolk\w5\w5-PSpiceFiles\SCHEMATIC1\w5.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 11/07/24 14:52:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-w5"  [ C:\Users\PC\Desktop\ElecCpe240_FolkFolkFolk\w5\w5-PSpiceFiles\SCHEMATIC1\w5.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VA)    3.0404  (   VB)    4.5022  ( +VCC)   12.0000  ( -VCC)  -12.0000      
+
+( VOUT)    3.1098  (N00394)    3.0600 (N00402)    3.0601 (X_U2.6)-293.1E-06     
+
+(X_U2.7)    3.1098 (X_U2.8)    3.1098 (X_U2.9)    0.0000 (X_U2.10)    2.4518    
+
+(X_U2.11)   11.9600                   (X_U2.12)   11.9600                       
+
+(X_U2.13)    2.4659                   (X_U2.14)    2.4659                       
+
+(X_U2.53)   11.0000                   (X_U2.54)  -11.0000                       
+
+(X_U2.90) 497.7E-06                   (X_U2.91)   40.0000                       
+
+(X_U2.92)  -40.0000                   (X_U2.99)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.412E-03
+    V_V2        -1.337E-03
+    X_U2.vb     -2.931E-09
+    X_U2.vc      7.891E-12
+    X_U2.ve      1.562E-11
+    X_U2.vlim    4.977E-07
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   3.30E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/07/24 14:52:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-w5"  [ C:\Users\PC\Desktop\ElecCpe240_FolkFolkFolk\w5\w5-PSpiceFiles\SCHEMATIC1\w5.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       36.89
+

@@ -1,0 +1,88 @@
+
+**** 10/10/24 13:27:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-folkfolksim"  [ C:\Users\PC\Desktop\electornic_folkfolk-PSpiceFiles\SCHEMATIC1\folkfolksim.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "folkfolksim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\PC\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ELECTORNIC_FOLKFOLK
+R_R1         N00172 N00167  2k  
+R_R2         N00172 N00176  3k  
+R_R3         N00190 0  5k  
+V_V1         N00167 N00190 10Vdc
+V_V2         N00176 0 4Vdc
+
+**** RESUMING folkfolksim.cir ****
+.END
+
+**** 10/10/24 13:27:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-folkfolksim"  [ C:\Users\PC\Desktop\electornic_folkfolk-PSpiceFiles\SCHEMATIC1\folkfolksim.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00167)    7.0000 (N00172)    5.8000 (N00176)    4.0000 (N00190)   -3.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -6.000E-04
+    V_V2         6.000E-04
+
+    TOTAL POWER DISSIPATION   3.60E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/10/24 13:27:56 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-folkfolksim"  [ C:\Users\PC\Desktop\electornic_folkfolk-PSpiceFiles\SCHEMATIC1\folkfolksim.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+
