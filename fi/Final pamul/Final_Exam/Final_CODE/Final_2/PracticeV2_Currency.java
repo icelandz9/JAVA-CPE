@@ -80,7 +80,6 @@ public class PracticeV2_Currency extends JFrame {
         });
 
         btnCategory.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 // ต้องอ่านจาก weight/height ใหม่ (pattern เดียวกับ Final_2 ft button)
                 double weight = Double.parseDouble(tfWeight.getText());

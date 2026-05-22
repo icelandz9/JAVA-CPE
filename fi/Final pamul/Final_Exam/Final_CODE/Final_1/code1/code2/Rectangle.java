@@ -10,17 +10,14 @@ public class Rectangle extends Shape implements Computable {
         this.height = height;
     }
 
-    @Override
     public String getDescription() {
         return "I am a rectangle with width " + width + " and height " + height;
     }
 
-    @Override
     public double getArea() {
         return width * height;
     }
 
-    @Override
     public double getVolume() {
         return 0; // 2D shapes have 0 volume
     }

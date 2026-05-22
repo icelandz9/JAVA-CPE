@@ -1,5 +1,3 @@
-package Final_Exam.Final_CODE.Final_5;
-
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;

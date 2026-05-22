@@ -14,7 +14,7 @@ public class cpe222_442_01_v2 {
 
             // เช็กว่าออบเจ็กต์นี้คำนวณได้หรือไม่ (instanceof)
             if (s instanceof Computable) {
-                Computable c = (Computable) s;
+                Computable c = (Computable);
                 System.out.printf(" > Area: %.2f\n", c.getArea());
                 System.out.printf(" > Volume: %.2f\n", c.getVolume());
             }

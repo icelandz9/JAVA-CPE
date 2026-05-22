@@ -1,5 +1,3 @@
-package Final_Exam.Final_CODE.Final_7;
-
 import java.awt.*;
 import javax.swing.*;
 
@@ -105,7 +103,7 @@ public class cpe222_442_07 {
         // ─── ส่วนที่ 5: แสดงผลหน้าต่าง ────────────────────────────────────
         f.add(p);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setSize(455, 250);
+        f.setSize(500, 300);
         f.setLocationRelativeTo(null);
         f.setVisible(true);
     }
